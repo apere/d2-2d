@@ -1,0 +1,260 @@
+html,
+html a {
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	-webkit-text-stroke: 1px transparent;
+	font-smooth: always;
+}
+
+body {
+	@extend .source-sans;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+	@extend %transitions;
+	&:hover {
+		color: $text-secondary-color;
+	}
+  
+  &.black {
+    color: black;
+
+    &:hover {
+      color: $text-secondary-color;
+    }	
+  }	
+}
+
+.header-text {
+	color: $text-header-color;	
+}
+
+.header-sub-text {
+	color: $text-header-secondary-color;	
+}
+
+.main-container {
+  color: $text-color; 
+}
+
+.main-text {
+	color: $text-color;	
+}
+
+.secondary-text {
+	color: $text-secondary-color;	
+}
+
+.mate {
+	font-family: $font-sans;
+}
+
+.source-sans {
+	font-family: $font-serif;
+}
+
+.hero {
+	.wrapper {
+		&:hover {
+			.hero-text {
+				color: white;
+			}
+		}
+
+		.hero-text {
+			color: $text-header-color;
+      @extend %transitions;
+      
+			.title,
+			.subtitle {
+				text-align: center;
+			}
+			.subtitle {
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.title {
+	@extend .mate;
+  @extend %transitions;
+	font-weight: 100;
+	font-size: 40px;	
+	line-height: 52px;
+	
+	&.small {
+		font-size: 22px;
+		line-height: 24px;
+		margin-left: 5%;
+		margin-top: 6em;
+		max-width: 70%;
+	}
+}
+
+.subtitle {
+	@extend .mate;
+  @extend %transitions;
+	font-size: 26px;	
+}
+
+.logo-nav {
+	text-align: center;
+	a {
+		color: $text-secondary-color;
+		text-decoration: none;
+		&:hover {
+			color: $text-color;
+		}
+	}
+	.logo {
+		text-decoration: underline;
+    text-transform: capitalize;
+		font-size: $logo-font-size;
+	}
+}
+
+.project {
+	.project-info {
+		.title, .medium, .year {
+			@extend .mate;
+		}
+		.medium, .year {
+			font-size: $title-font-size;	
+			line-height: $title-line-height;
+		}
+		&:hover {
+			.title {
+				color: $title-hover-color;
+			}
+		}
+	}
+	.row {
+		&.center {
+			text-align: center;
+		}
+	}
+	
+	.project-item {
+		text-align: center;
+
+		&.one {
+			div {
+				text-align: right;
+			}
+		}
+		&.two {
+			div {
+				text-align: right;
+			}
+		}
+		&.three {
+			div {
+				text-align: right;
+			}
+		}
+		.item-title {
+			font-style: italic;
+		}
+	}
+}
+
+.current-exhibit {
+	.label {
+		font-size: .8em;
+	}
+	ul {
+		li {
+			font-size: 1.1em;
+			&.ex-title {
+				font-weight: $bold;
+				font-size: 1.5em;
+				line-height: 2.2em;
+			}
+			em {
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.statement {
+  text-align: left;
+	em {
+		font-style: italic;
+	}
+	p {
+		@extend .source-sans;	
+	}
+}
+
+.poem {
+	line-height: 2.2em;
+}
+
+.quote {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-style: italic;
+	text-align: left;
+	font-size: 22px;
+	line-height: 27px;
+	p {
+		margin-bottom: 20px;	
+	}
+	
+	.author {
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 22px;
+		.name {
+			
+			font-style: normal;
+			font-weight: 700;
+
+		}
+	}
+}
+
+.portfolio-link {
+	text-align: right;	
+}
+
+.cv {
+	.label {
+		text-transform: uppercase;
+		font-weight: $bold;
+	}
+}
+
+
+#about .statement {
+	margin-bottom: 1em;
+	
+	&:first-of-type {
+		margin-top: 2em;	
+	}
+}
+
+footer {
+	table {
+		font-size: .85em;
+		@extend .mate;
+		tr {
+			td {
+				a {
+					color: $text-secondary-color;
+					&:hover {
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){function o(o){var t=window.outerWidth,e=window.outerHeight;n(t>700)}function n(o){$("html").toggleClass("desktop-mode",o)}var t=$(window);t.on("resize",o),o()});
