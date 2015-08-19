@@ -3,6 +3,11 @@ html, body {
   font-size: $base-font-size;
 }
 
+svg {
+	text-rendering: optimizeLegibility;
+}
+
+// *** headers ***
 h1, h2, h3 {
   font-weight: $bold;
 }
@@ -22,6 +27,28 @@ h3 {
   line-height: $small-title-line-height;
 }
 
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+// *** end headers ***
+
+b {
+	font-weight: $bold;
+}
+
+i {
+	font-style: italic;
+}
+
+
 a {
 	@extend %transitions;
 	text-decoration: none;
@@ -32,6 +59,5 @@ a {
 	}
 }
 
-svg {
-	text-rendering: optimizeLegibility;
-}
+
+
