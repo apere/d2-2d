@@ -18,7 +18,7 @@ This directory is extremely organized... for some, it may be a bit too organized
 ### Config Files
 
 1. `config.rb` - This file is used to configure compass and define the directories where the `Sass` files will be compiled from and to.
-2. `config.codekit` - This is a configuration file for codekit that is set up to compile javascript, Jade, and Sass files as well as add vendor prefixes automatically.
+2. `config.codekit` - This is a configuration file for codekit that is set up to compile javascript, Jade, and Sass files and vendor prefixes to styles automatically.
 
 ### Assets
 Assets is where you should place all your non-html files.
@@ -31,18 +31,18 @@ Assets is where you should place all your non-html files.
 example icon:
 
 ```svg
-	<symbol id="icon-activities" width = "13px" height = "13px" viewBox="0 0 13 13">
-		  <path d="M5.826,9.926 C5.826,9.926 5.826,8.938 5.826,8.938 C5.826,8.938 12.814,8.938 12.814,8.938 C12.814,8.938 12.814,9.926 12.814,9.926 C12.814,9.926 5.826,9.926 5.826,9.926 ZM7.841,5.939 C7.841,5.939 12.814,5.939 12.814,5.939 C12.814,5.939 12.814,6.927 12.814,6.927 C12.814,6.927 7.841,6.927 7.841,6.927 C7.841,6.927 7.841,5.939 7.841,5.939 ZM5.840,3.003 C5.840,3.003 12.814,3.003 12.814,3.003 C12.814,3.003 12.814,3.960 12.814,3.960 C12.814,3.960 5.840,3.960 5.840,3.960 C5.840,3.960 5.840,3.003 5.840,3.003 ZM5.840,0.003 C5.840,0.003 12.814,0.003 12.814,0.003 C12.814,0.003 12.814,0.960 12.814,0.960 C12.814,0.960 5.840,0.960 5.840,0.960 C5.840,0.960 5.840,0.003 5.840,0.003 ZM6.954,6.385 C5.008,8.176 3.413,10.696 2.910,11.986 C2.910,11.986 -0.015,8.886 -0.015,8.886 C-0.015,8.886 0.732,8.377 0.732,8.377 C0.732,8.377 2.425,9.672 2.425,9.672 C3.116,8.849 4.655,6.615 6.775,5.315 C6.775,5.315 6.954,6.385 6.954,6.385 ZM1.802,3.003 C1.802,3.003 3.676,3.003 3.676,3.003 C3.676,3.003 3.676,3.960 3.676,3.960 C3.676,3.960 1.802,3.960 1.802,3.960 C1.802,3.960 1.802,3.003 1.802,3.003 ZM1.802,0.003 C1.802,0.003 3.676,0.003 3.676,0.003 C3.676,0.003 3.676,0.960 3.676,0.960 C3.676,0.960 1.802,0.960 1.802,0.960 C1.802,0.960 1.802,0.003 1.802,0.003 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
-		</symbol>
+<symbol id="icon-activities" width = "13px" height = "13px" viewBox="0 0 13 13">
+  <path d="M5.826,9.926 C5.826,9.926 5.826,8.938 5.826,8.938 C5.826,8.938 12.814,8.938 12.814,8.938 C12.814,8.938 12.814,9.926 12.814,9.926 C12.814,9.926 5.826,9.926 5.826,9.926 ZM7.841,5.939 C7.841,5.939 12.814,5.939 12.814,5.939 C12.814,5.939 12.814,6.927 12.814,6.927 C12.814,6.927 7.841,6.927 7.841,6.927 C7.841,6.927 7.841,5.939 7.841,5.939 ZM5.840,3.003 C5.840,3.003 12.814,3.003 12.814,3.003 C12.814,3.003 12.814,3.960 12.814,3.960 C12.814,3.960 5.840,3.960 5.840,3.960 C5.840,3.960 5.840,3.003 5.840,3.003 ZM5.840,0.003 C5.840,0.003 12.814,0.003 12.814,0.003 C12.814,0.003 12.814,0.960 12.814,0.960 C12.814,0.960 5.840,0.960 5.840,0.960 C5.840,0.960 5.840,0.003 5.840,0.003 ZM6.954,6.385 C5.008,8.176 3.413,10.696 2.910,11.986 C2.910,11.986 -0.015,8.886 -0.015,8.886 C-0.015,8.886 0.732,8.377 0.732,8.377 C0.732,8.377 2.425,9.672 2.425,9.672 C3.116,8.849 4.655,6.615 6.775,5.315 C6.775,5.315 6.954,6.385 6.954,6.385 ZM1.802,3.003 C1.802,3.003 3.676,3.003 3.676,3.003 C3.676,3.003 3.676,3.960 3.676,3.960 C3.676,3.960 1.802,3.960 1.802,3.960 C1.802,3.960 1.802,3.003 1.802,3.003 ZM1.802,0.003 C1.802,0.003 3.676,0.003 3.676,0.003 C3.676,0.003 3.676,0.960 3.676,0.960 C3.676,0.960 1.802,0.960 1.802,0.960 C1.802,0.960 1.802,0.003 1.802,0.003 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</symbol>
 ```
 Each icon should be wrapped in a `symbol` element with a unique id, a width, a height, and a viewbox (which usually determines the width and height).
 
 To use the icon, you would do something like
 
 ```html
-  <svg class="icon">
-    <use xlink:href="<%= basepath %>/imgs/icons/icons.svg#icon-activities" />
-  </svg>
+<svg class="icon">
+  <use xlink:href="<%= basepath %>/imgs/icons/icons.svg#icon-activities" />
+</svg>
 ```
 Where you simply append the id of your icon at the end of the `xlink:href` attr (which should be the url of your spritesheet).
 
