@@ -196,7 +196,7 @@ footer {
 .basic-lollipop-chart .axes .axis path,
 .basic-lollipop-chart .axes .axis line {
   fill: none;
-  stroke: white;
+  stroke: rgba(74, 74, 74, 0.3);
   stroke-width: 1px;
   shape-rendering: crispEdges; }
 .basic-lollipop-chart .axes text {

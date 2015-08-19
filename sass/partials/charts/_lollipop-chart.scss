@@ -102,7 +102,7 @@
 		.axis path,
 		.axis line {
 			fill: none;
-			stroke: white;
+			stroke: rgba($chart-point-color, .3);
 			stroke-width: 1px;
 			shape-rendering: crispEdges;
 		}
