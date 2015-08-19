@@ -7,10 +7,10 @@ A handfull of helpful codes stuffs (snippets and explanations) to make starting 
 ## Dependencies
 1. I prefer to use [codekit](https://incident57.com/codekit/) to compile `Sass` and `Jade` files. If you prefer a commandline approach, I recommend [gulp](http://gulpjs.com/).
 2. [Compass](http://compass-style.org/) -- This configures the Sass directories and adds many useful functions
-3. Sass
-4. Jade
-5. d3.js
-6. Jquery
+3. Sass -- This compiles into our `css` file
+4. Jade -- This is a templating engine that compiles into our actual `html` files.
+5. d3.js -- This is a javascript library that is used to make interactive graphics and charts
+6. Jquery -- Hopefully I don't need to introduce this.
 
 ## Structure 
 This directory is extremely organized... for some, it may be a bit too organized but I believe that breaking everything up this way will make it easier for the client to understand our code (not to mention make it that much quicker to understand our own code.
