@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){$(".viz-content").html(""),makeBasicLine("#line-chart-1",myData)}$(window).resize(function(){waitForFinalEvent(function(){n()},500,"some unique string")})});var waitForFinalEvent=function(){var n={};return function(t,i,e){e||(e="Don't call this twice without a uniqueId"),n[e]&&clearTimeout(n[e]),n[e]=setTimeout(t,i)}}();

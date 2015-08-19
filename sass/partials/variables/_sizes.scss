@@ -1,16 +1,11 @@
-// ****
-// * Sizes
-// ****
-$hero-height: 90vh;
+// Padding
+$base-padding: 1em;
+$header-padding: $base-padding 2em;
+$main-content-padding: $header-padding;
+$footer-padding: $header-padding;
 
-$max-main-container-width: 1200px;
-$min-main-container-height: 100vh;
-$main-container-margin: 100px;
+// Heights
+$footer-height: 3em;
 
-$content-padding: 60px;
-
-$project-margin: 4em;
-
-$logo-width: 50px;
-
-
+// Widths
+$nav-width: 100px;

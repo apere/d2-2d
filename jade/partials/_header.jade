@@ -1,10 +1,7 @@
 block hero-id
-.hero(id= heroID)
+header.header(id= heroID)
 	.wrapper
-		.hero-image
-		.hero-text
-			.title
-				block hero-title
-			.subtitle
-				block hero-subtitle
-		.overlay
+		.logo 
+			img(src="../assets/imgs/logo.png")
+			span.logo-text 
+				block header-text

@@ -2,13 +2,24 @@
 // * Type
 // ****
 
-$font-serif: 'Source Sans Pro', serif;
-$font-sans: 'Mate', sans-serif;
+$font-serif: 'Courier New', serif;
+$font-sans: 'Helvetica', sans-serif;
 
+$light: 200;
 $normal: 400;
-$bold: 600;
+$bold: 800;
 
-$title-font-size: 26px;
-$logo-font-size: $title-font-size;
+// Base Fonts in px
+$base-font-size: 16px;
+$base-line-height: 20px;
 
-$title-line-height: 28px;
+
+// Rest of font-sizes in em
+$title-font-size: 2em;
+$title-line-height: 1em;
+
+$medium-title-font-size: 1.7em;
+$medium-title-line-height: 1em;
+
+$small-title-font-size: 1.35em;
+$small-title-line-height: 1em;

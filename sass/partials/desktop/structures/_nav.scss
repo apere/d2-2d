@@ -1,0 +1,14 @@
+nav {
+	display: inline-block;
+	width: $nav-width;
+	vertical-align: top;
+	margin-top: $base-padding;
+	ul {
+		li {
+			padding-left: .5em;
+			padding-right: 2 * $base-padding;
+			display: block;	
+			text-align: left;
+		}
+	}	
+}

@@ -1,0 +1,11 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	height: $footer-height;
+	background-color: $footer-background-color;
+	line-height: $footer-height;
+	padding: $footer-padding;
+}

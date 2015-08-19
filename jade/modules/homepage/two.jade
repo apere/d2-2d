@@ -1,10 +1,8 @@
-extends ../../templates/_module.jade
-block project-id
-	- var projectID = "two";
-block project-title 
-	= "two"
-block project-medium
-	= "two-medium"
-block project-year
-	= "2012"
-block project-content
+extends ../../templates/_chart.jade
+block module-id
+	- var ID = "one";
+block module-title 
+	= "Extra Line Chart"
+block chart-attrs
+	- chartClass = "basic-line-chart"
+	- chartID = "line-chart-2"

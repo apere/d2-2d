@@ -4,69 +4,58 @@
 <html>
   <head>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/all/all.css">
     <script src="/assets/js/vendor/jquery.js"></script>
     <script src="/assets/js/vendor/d3.min.js"></script>
+    <script src="/assets/js/charts/line-chart.js"></script>
+    <script src="/assets/js/charts/extra-line-chart.js"></script>
     <script src="/assets/js/min/all.js"></script>
     <!-- Target this block to append any page specific javascripts-->
     <title>Application Title</title>
   </head>
   <body>
-    <div id="index-hero" class="hero">
+    <header id="index-hero" class="header">
       <div class="wrapper">
-        <div class="hero-image"></div>
-        <div class="hero-text">
-          <div class="title">Sample Company</div>
-          <div class="subtitle">Sample Text</div>
-        </div>
-        <div class="overlay"></div>
+        <div class="logo"> <img src="../assets/imgs/logo.png"><span class="logo-text"> Helpful Code Hints</span></div>
       </div>
-    </div>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/d3/">d3.js</a></li>
+      </ul>
+    </nav>
     <div class="main-wrapper">
-      <nav>
-        <ul class="nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/other/">other</a></li>
-          <li><a href="/another/">Another</a></li>
-          <li><a href="/one-more/">One More</a></li>
-        </ul>
-      </nav>
       <!-- Target this block and set a javascript variable equal to the id that you want the container to have-->
       <!-- This is useful when you want to have a different ID for the main container on each page-->
       <div class="main-container">
         <div class="content">
           <!-- Target this block to append the main content of the page-->
-          <div id="one" class="project">
-            <div class="project-info">
-              <div class="title">One
-              </div>
-              <div class="medium">one-medium
-              </div>
-              <div class="year">2012
-              </div>
+          <div class="module">
+            <div class="module-info">
+              <h1 class="title">Basic Line Chart
+              </h1>
+            </div>
+            <div id="line-chart-1" class="module sketch basic-line-chart">
+              <div class="viz-content"></div>
             </div>
           </div>
           <hr><br>
-          <div id="two" class="project">
-            <div class="project-info">
-              <div class="title">two
-              </div>
-              <div class="medium">two-medium
-              </div>
-              <div class="year">2012
-              </div>
+          <div class="module">
+            <div class="module-info">
+              <h1 class="title">Extra Line Chart
+              </h1>
+            </div>
+            <div id="line-chart-2" class="module sketch basic-line-chart">
+              <div class="viz-content"></div>
             </div>
           </div>
           <hr><br>
-          <div id="three" class="project">
-            <div class="project-info">
-              <div class="title">three
-              </div>
-              <div class="medium">three-medium
-              </div>
-              <div class="year">2012
-              </div>
+          <div id="three" class="module">
+            <div class="module-info">
+              <h1 class="title">three
+              </h1>
             </div>
           </div>
         </div>

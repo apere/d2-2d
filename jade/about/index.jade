@@ -1,16 +1,8 @@
 extends ../_layout.jade
-
 block hero-id
 	- var heroID = "index-hero"
-block hero-title
-	| ABOUT - Sample Company
-block hero-subtitle
-	| Sample Text
+block header-text
+	| Helpful Code Hints
 block content
-	include ../modules/homepage/one.jade
-	hr
-	br
-	include ../modules/homepage/two.jade
-	hr
-	br
-	include ../modules/homepage/three.jade
+	h1 about
+	p This website contains the basic framework for quickly setting up a new project and some sample d3 charts. Please read through the readme for any help.

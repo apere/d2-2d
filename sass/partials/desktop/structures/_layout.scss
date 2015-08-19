@@ -1,0 +1,4 @@
+.main-wrapper {
+	display: inline-block;
+	width: calc(100vw - #{$nav-width} - 5em);
+}

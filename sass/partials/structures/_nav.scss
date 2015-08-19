@@ -1,0 +1,18 @@
+nav {
+	width: 100vw;
+	text-align: center;
+	ul {
+		width: auto;
+		display: inline-block;
+		li {
+			@extend %transitions;
+			display: inline-block;
+			padding: .5em $base-padding;
+			background-color: transparent;		
+			&:hover, &:active, &.selected {
+				font-weight: $light;
+				background-color: $nav-hover-color;
+			}
+		}
+	}
+}

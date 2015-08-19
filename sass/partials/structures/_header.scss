@@ -1,0 +1,8 @@
+header {
+  width: calc(100vw - 4em);
+  padding: $header-padding;
+  background-color: $header-background-color;
+  span {
+    margin-bottom: 6px; 
+  }
+}

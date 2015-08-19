@@ -1,0 +1,27 @@
+.basic-line-chart {
+	path,
+	line {
+		stroke: $chart-point-color;
+		fill: transparent;
+	}
+	.axis {
+		text {
+			fill: $chart-text-color;
+		}
+	}
+	.max-min-point {
+		stroke-dasharray: 3;
+	}
+	.point-text,
+	circle {
+		fill: $chart-point-color;
+	}
+	.max-min-point {
+		text {
+			fill: $chart-text-color;
+		}
+		line {
+			stroke: $chart-text-color;
+		}
+	}
+}
