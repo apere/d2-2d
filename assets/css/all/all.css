@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +48,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .basic-lollipop-chart .back-arrow, .basic-lollipop-chart line, .basic-lollipop-chart circle, .basic-lollipop-chart .label-post-count, a, nav ul li {
   transition: all 250ms ease-in-out; }
+
+img {
+  max-width: 100%;
+  max-height: 100vh; }
 
 .basic-line-chart path,
 .basic-line-chart line {
@@ -147,6 +152,9 @@ html, body {
   font-family: "Courier New", serif;
   font-size: 16px; }
 
+svg {
+  text-rendering: optimizeLegibility; }
+
 h1, h2, h3 {
   font-weight: 800; }
 
@@ -169,14 +177,39 @@ a {
   a:hover {
     font-weight: 200; }
 
-svg {
-  text-rendering: optimizeLegibility; }
+b {
+  font-weight: 800; }
+
+i {
+  font-style: italic; }
+
+em {
+  font-style: italic; }
+
+mark {
+  background-color: rgba(245, 245, 142, 0.61); }
+
+small {
+  font-size: 0.6em; }
+
+blockquote, .quote {
+  position: relative;
+  margin: .5em;
+  padding: .5em; }
+  blockquote:after, .quote:after {
+    content: "“";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: -.3em;
+    top: .4em; }
 
 body {
   position: relative;
-  padding-bottom: 6em; }
+  padding-bottom: 6em;
+  min-height: calc(100vh - 3em * 2); }
 
-.main-wrapper {
+main.main-container {
   padding: 1em 2em; }
 
 header {
@@ -211,7 +244,7 @@ footer {
   padding: 1em 2em; }
 
 @media only screen and (min-width: 800px) {
-  .main-wrapper {
+  main.main-container {
     display: inline-block;
     width: calc(100vw - 100px - 5em); }
 

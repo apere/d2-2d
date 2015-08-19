@@ -7,6 +7,7 @@ svg {
 	text-rendering: optimizeLegibility;
 }
 
+
 // *** headers ***
 h1, h2, h3 {
   font-weight: $bold;
@@ -40,13 +41,8 @@ h6 {
 }
 // *** end headers ***
 
-b {
-	font-weight: $bold;
-}
 
-i {
-	font-style: italic;
-}
+// *** inline text treatment ***
 
 
 a {
@@ -59,5 +55,104 @@ a {
 	}
 }
 
+b {
+	font-weight: $bold;
+}
+
+code {
+	
+}
+
+i {
+	font-style: italic;
+}
+
+em {
+	font-style: italic;
+}
+
+// used for highlighting text (as opposed to span)
+mark {
+	background-color: rgba(245, 245, 142, 0.61);
+}
+
+// used for inserted text
+ins {
+	
+}
+
+// inline quote
+q { 
+	
+}
+
+// strikethrough
+s {
+	
+}
+
+small {
+	font-size: $small-font-size;
+}
+
+span {
+	
+}
+
+strong {
+	
+}
 
 
+sub {
+	
+}
+
+sup {
+	
+}
+
+// underline
+u {
+	
+}
+
+// ***  end inline text treatment ***
+
+
+// *** Block Text Options ***
+
+p {
+	
+}
+
+blockquote, .quote {
+	position: relative;
+	margin: .5em;
+	padding: .5em;
+	
+	&:after { // this will automatically put a left quote in the left margin
+		content: "“";
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		left: -.3em;
+		top: .4em;
+	}
+}
+
+// definition lists 
+dl {
+	dt {
+		
+	}
+	dd {
+		
+	}
+}
+
+figcaption {
+	
+}
+
+// *** End Block Text Options ***

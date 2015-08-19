@@ -15,7 +15,49 @@
 <ol>
 <li>I prefer to use <a href="https://incident57.com/codekit/">codekit</a> to compile <code>Sass</code> and <code>Jade</code> files. If you prefer a commandline approach, I recommend <a href="http://gulpjs.com/">gulp</a>.</li>
 <li><a href="http://compass-style.org/">Compass</a> &#8211; This configures the Sass directories and adds many useful functions</li>
-<li></li>
+<li>Sass</li>
+<li>Jade</li>
+<li>d3.js</li>
+<li>Jquery</li>
+</ol>
+
+<h2 id="structure">Structure</h2>
+
+<p>This directory is extremely organized&#8230; for some, it may be a bit too organized but I believe that breaking everything up this way will make it easier for the client to understand our code (not to mention make it that much quicker to understand our own code.</p>
+
+<h3 id="jade">Jade</h3>
+
+<p>An <code>_</code> at the beginning of a file name denotes a template or module that should not be rendered by itself. All <code>Jade</code> files are in the <code>/jade</code> directory. This folder should not be included when uploading for distribution. It is only for development. Jade file compile into the root directory e.g. <code>/jade</code> &#8211;&gt; <code>root</code> but <code>/jade/about</code> &#8211;&gt; <code>root/about</code></p>
+
+<ol>
+<li><code>/modules</code> - This directory should include any content specific partials. Most of the time, these will extend a template.</li>
+<li><code>/partials</code> - This directory should include any chunks that can be included on more than one page. These are generally content agnostic (like a template) but are included in either a template or a page. (e.g. header, footer, navbar)</li>
+<li><code>/templates</code> - This directory includes any chunks that are aware of the type of content that they can contain but not the specific content. For example, you might have a chart template that you use to create chart modules.</li>
+<li><code>_layout.jade</code> - This is the master template for most pages (including the index). This is not in the <code>/templates</code> directory simply because it is a file that you may reference often and I want to stress its importance.</li>
+<li><code>index.jade</code>, <code>/about</code>, <code>/d3</code>, <code>...</code> - Every other folder/file in <code>/jade</code> should contain the file that actually compiles into html. Usually this will extend <code>_layout</code> and will most likely include partials or modules. These pages are content specific and this is where you define the content in each block (that exists in everything it extends or includes)</li>
+</ol>
+
+<h3 id="sass">Sass</h3>
+
+<p>An <code>_</code> at the beginning of a file name denotes a partial. This will not compile into its own <code>.css</code> file. All <code>Sass</code> files are located in the <code>/sass</code> directory. YOU SHOULD BE WRITING YOUR STYLES FOR MOBILE FIRST, DESKTOP SECOND.</p>
+
+<ol>
+<li><code>all/all.scss</code> - Only <code>.scss</code> files in the <code>all</code> directory will be compiled into a css file. For the most part, <code>all.css</code> is the only file that will be compiled. This file is simply a list of includes for everything at the first level of the <code>/partials</code> directory. If you add a file to the first level of <code>/partials</code> then you must include it in <code>all.scss</code>.</li>
+<li><code>/partials</code> - This is the directory where you&#8217;ll be spending most of your time. It contains all the <code>.scss</code> partial files that compile into <code>all.scss</code>.</li>
+<li><code>/partials/_charts.scss</code> - This file contains no actual styles, it simply includes all files from <code>/partials/charts</code>.</li>
+<li><code>/partials/charts</code> - This directory contains all the individual <code>.scss</code> files for each chart type.</li>
+<li><code>/partials/_desktop.scss</code> - This file includes everything in the <code>/partials/desktop</code> directory and wraps it in a media query. This allows you to break up the styles for desktop and mobile.</li>
+<li><code>/partials/desktop</code> - This directory contains all the <code>.scss</code> files for larger screen sizes. This directory should mimic <code>/partials</code> (omitting a few files / directories)</li>
+<li><code>/partials/_fonts.scss</code> - This is where you define any fonts if you have the source files</li>
+<li><code>/partials/_forms.scss</code> - This file contains no acutal styles, it simply includes all files from <code>/partials/forms</code>.</li>
+<li><code>/partials/forms</code> - This directory contains all files associate with form elements.</li>
+<li><code>/partials/_icons.scss</code> - This file is where you should define all icon classes and do perform icon styling.</li>
+<li><code>/partials/_media.scss</code> - This file is where you do all styling for any type of media: images, audio, video, etc.</li>
+<li><code>/partials/_structure.scss</code> - This file should have no actual styles. It simply includes all files in <code>/partials/structures</code>.</li>
+<li><code>/partials/structures</code> - This directory contains all files that directly relate to the layout of the page. This includes: the footer, header, lists, navigation menus, tables, and others.</li>
+<li><code>/partials/_typography.scss</code> - This file contains all styles that directly relate to type and not structure. This includes font sizes, line heights, font colors, blockquotes, paragraphs, etc.</li>
+<li><code>/partials/_variables.scss</code> - This file does not contain any actual styles. It simply includes all files in <code>/partials/variables</code>.</li>
+<li><code>/partials/variables</code> - This directory includes files that contain every <code>Sass</code> variable that will be used in this project. That also includes helper classes that you may want to extend over and over again (e.g. transitions).</li>
 </ol>
 
 </body>

@@ -17,12 +17,11 @@ html
 	body
 		include partials/_header.jade
 		include partials/_nav.jade
-		.main-wrapper
-			// Target this block and set a javascript variable equal to the id that you want the container to have
-			// This is useful when you want to have a different ID for the main container on each page
-			block main-container-id
-			.main-container(id= mainContainerID)
-				.content
-					// Target this block to append the main content of the page
-					block content
-			include partials/_footer.jade
+		// Target this block and set a javascript variable equal to the id that you want the container to have
+		// This is useful when you want to have a different ID for the main container on each page
+		block main-container-id
+		main.main-container(id= mainContainerID)
+			.content
+				// Target this block to append the main content of the page
+				block content
+		include partials/_footer.jade

@@ -1,8 +1,24 @@
 body {
 	position: relative;
 	padding-bottom: $footer-height * 2;
+	min-height: calc(100vh - #{$footer-height} * 2);
 }
 
-.main-wrapper {
-	padding: $main-content-padding;
+
+article {
+	
+}
+
+section {
+	
+}
+
+figure {
+	
+}
+
+main {
+	&.main-container {
+		padding: $main-content-padding;
+	}
 }

@@ -1,4 +1,22 @@
-.main-wrapper {
-	display: inline-block;
-	width: calc(100vw - #{$nav-width} - 5em);
+body {
+	
+}
+
+article {
+	
+}
+
+section {
+	
+}
+
+figure {
+	
+}
+
+main {
+	&.main-container {
+		display: inline-block;
+		width: calc(100vw - #{$nav-width} - 5em);
+	}
 }
