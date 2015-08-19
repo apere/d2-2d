@@ -31,3 +31,7 @@ a {
 		font-weight: $light;	
 	}
 }
+
+svg {
+	text-rendering: optimizeLegibility;
+}

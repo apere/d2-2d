@@ -114,8 +114,6 @@ function makeExtraLine(sketchID, theData) {
 	var path = svg.append("path")
 		.attr("class", "line")
 		.attr("d", valueline(data));
-	
-	console.log(path);
 
 	var totalLength = path.node().getTotalLength();
 

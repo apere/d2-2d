@@ -74,6 +74,9 @@ a {
   a:hover {
     font-weight: 200; }
 
+svg {
+  text-rendering: optimizeLegibility; }
+
 body {
   position: relative;
   padding-bottom: 6em; }
@@ -117,7 +120,8 @@ footer {
   stroke: #4a4a4a;
   fill: transparent; }
 .basic-line-chart .axis text {
-  fill: #4a4a4a; }
+  fill: #4a4a4a;
+  font-size: 0.85em; }
 .basic-line-chart .max-min-point {
   stroke-dasharray: 3; }
 .basic-line-chart .point-text,

@@ -5493,6 +5493,8 @@ $( document ).ready(function() {
 			"avg": 0.2857142857142857
 	}];
 	
+	var tickMod = 1;
+	
 	
 	// ****************
 	// * Navigation
@@ -5544,12 +5546,21 @@ $( document ).ready(function() {
 		var newWidth = window.outerWidth;
 		var newHeight = window.outerHeight;
 		
+		if(newWidth >= 1000) {
+			tickMod = 1;	
+		} else if (newWidth < 1000 && newWidth >= 600) {
+			tickMod = 2;	
+		} else if (newWidth < 600 && newWidth >= 450) {
+			tickMod = 3;	
+		} else {
+			tickMod = 6;	
+		}
+		
 		// Clear all charts to reinitialize them
-		console.log(event);
 		$('.viz-content').html('');
 		makeBasicLine('#line-chart-1', basicLineData);
 		makeExtraLine('#line-chart-2', extraLineData);
-		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Day", 1, 'average posts on');
+		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Hour", tickMod, 'average posts at');
 		
 		// Now do something with these new values
 		toggleDesktop(newWidth > 800);

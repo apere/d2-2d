@@ -79,19 +79,25 @@ function makeLollipopChart(sketchID, theData, chartTitle, tickMod, tooltipText) 
     .scale(xScale)
     .orient('bottom');
 
-  axes.append('g')
+  var xAxisG = axes.append('g')
     .attr("class", "axis x-axis")
     .attr("transform", "translate(0," + (heightn - margin.bottom) + ")")
     .call(xAxis);
 
   xAxis.tickValues(xTickValues);
+	
+	xAxisG.selectAll('.tick text').text(function(d,i) {
+		var currentText = d3.select(this).text();
+		return currentText.replace(/ /g,'');
+	})
+	
 
   var yAxis = d3.svg.axis()
     .scale(yScale)
     .orient("left")
     .ticks(5);
 
-  axes.append('g')
+  var yAxisG = axes.append('g')
     .attr("class", "axis y-axis")
     .attr("transform", "translate(" + margin.left + ",0)")
     .call(yAxis);
@@ -330,15 +336,18 @@ function makeLollipopChart(sketchID, theData, chartTitle, tickMod, tooltipText) 
     largeOpacityScale.domain([maxDocs / 3, maxDocs]);
     smallOpacityScale.domain([minDocs, maxDocs / 3]);
 
-    d3.selectAll(sketchID + ' .y-axis')
-      .transition()
+    yAxisG.transition()
       .duration(600).ease("sin-in-out")
       .call(yAxis);
 
-    d3.selectAll(sketchID + ' .x-axis')
-      .transition()
+    xAxisG.transition()
       .duration(600).ease("sin-in-out")
       .call(xAxis);
+		
+		xAxisG.selectAll('.tick text').text(function(d,i) {
+			var currentText = d3.select(this).text();
+			return currentText.replace(/ /g,'');
+		})
 
 
     // **
