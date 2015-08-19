@@ -47,16 +47,18 @@ To use the icon, you would do something like
 Where you simply append the id of your icon at the end of the `xlink:href` attr (which should be the url of your spritesheet).
 
 ### Jade
-An `_` at the beginning of a file name denotes a template or module that should not be rendered by itself. All `Jade` files are in the `/jade` directory. This folder should not be included when uploading for distribution. It is only for development. Jade file compile into the root directory e.g. `/jade` --> `root` but `/jade/about` --> `root/about`
+An `_` at the beginning of a file name denotes a template or module that should not be rendered by itself. All `Jade` files are in the `/jade` directory. This directory should not be included when uploading for distribution. It is only for development. Jade file compile into the root directory e.g. `/jade` --> `root` but `/jade/about` --> `root/about`
 
 1. `/modules` - This directory should include any content specific partials. Most of the time, these will extend a template.
 2. `/partials` - This directory should include any chunks that can be included on more than one page. These are generally content agnostic (like a template) but are included in either a template or a page. (e.g. header, footer, navbar)
 3. `/templates` - This directory includes any chunks that are aware of the type of content that they can contain but not the specific content. For example, you might have a chart template that you use to create chart modules.
 4. `_layout.jade` - This is the master template for most pages (including the index). This is not in the `/templates` directory simply because it is a file that you may reference often and I want to stress its importance.
-5. `index.jade`, `/about`, `/d3`, `...` - Every other folder/file in `/jade` should contain the file that actually compiles into html. Usually this will extend `_layout` and will most likely include partials or modules. These pages are content specific and this is where you define the content in each block (that exists in everything it extends or includes)
+5. `index.jade`, `/about`, `/d3`, `...` - Every other directory/file in `/jade` should contain the file that actually compiles into html. Usually this will extend `_layout` and will most likely include partials or modules. These pages are content specific and this is where you define the content in each block (that exists in everything it extends or includes)
 
 ### Sass
-An `_` at the beginning of a file name denotes a partial. This will not compile into its own `.css` file. All `Sass` files are located in the `/sass` directory. YOU SHOULD BE WRITING YOUR STYLES FOR MOBILE FIRST, DESKTOP SECOND.
+An `_` at the beginning of a file name denotes a partial. This will not compile into its own `.css` file. All `Sass` files are located in the `/sass` directory. This directory should not be included when uploadng for distribution.
+
+YOU SHOULD BE WRITING YOUR STYLES FOR MOBILE FIRST, DESKTOP SECOND.
 
 1. `all/all.scss` - Only `.scss` files in the `all` directory will be compiled into a css file. For the most part, `all.css` is the only file that will be compiled. This file is simply a list of includes for everything at the first level of the `/partials` directory. If you add a file to the first level of `/partials` then you must include it in `all.scss`.
 2. `/partials` - This is the directory where you'll be spending most of your time. It contains all the `.scss` partial files that compile into `all.scss`. 
