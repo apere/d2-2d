@@ -5502,17 +5502,27 @@ $( document ).ready(function() {
 	// **
 	// * Bind a function to window reisizing
 	// **
-	win.on('resize', onWindowResize);
 	onWindowResize(); // call the function on page load
 	
 	
-	$(window).resize(function () {
+	win.resize(function () {
     waitForFinalEvent(function(){
       onWindowResize();
     }, 500, "some unique string");
 	});
 
-	var waitForFinalEvent = (function () {
+
+	
+	
+	
+	// ****************
+	// * Custom Functions
+	// * Try to modularize your code as much as possible by creating little functins
+	// * that can be used in multiple places
+	// ****************
+	
+	
+		var waitForFinalEvent = (function () {
 		var timers = {};
 		return function (callback, ms, uniqueId) {
 			if (!uniqueId) {
@@ -5525,15 +5535,6 @@ $( document ).ready(function() {
 		};
 	})();
 	
-	
-	
-	// ****************
-	// * Custom Functions
-	// * Try to modularize your code as much as possible by creating little functins
-	// * that can be used in multiple places
-	// ****************
-	
-	
 	// **
 	// * Function to be called when the window was resized;
 	// * params:
@@ -5543,8 +5544,15 @@ $( document ).ready(function() {
 		var newWidth = window.outerWidth;
 		var newHeight = window.outerHeight;
 		
+		// Clear all charts to reinitialize them
+		console.log(event);
+		$('.viz-content').html('');
+		makeBasicLine('#line-chart-1', basicLineData);
+		makeExtraLine('#line-chart-2', extraLineData);
+		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Day", 1, 'average posts on');
+		
 		// Now do something with these new values
-		toggleDesktop(newWidth > 700);
+		toggleDesktop(newWidth > 800);
 	}
 	
 	// **
@@ -5555,10 +5563,6 @@ $( document ).ready(function() {
 	// **
   function toggleDesktop(bool) {
 		$('html').toggleClass('desktop-mode', bool);
-		$('.viz-content').html('');
-		makeBasicLine('#line-chart-1', basicLineData);
-		makeExtraLine('#line-chart-2', extraLineData);
-		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Day", 1, 'average posts on');
 	 }
 	
 	

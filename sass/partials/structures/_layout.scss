@@ -1,6 +1,8 @@
-
+body {
+	position: relative;
+	padding-bottom: $footer-height * 2;
+}
 
 .main-wrapper {
 	padding: $main-content-padding;
-	margin-bottom: $footer-height;
 }

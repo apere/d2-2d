@@ -37,8 +37,8 @@ function makeLollipopChart(sketchID, theData, chartTitle, tickMod, tooltipText) 
   var margin = {
     top: 95,
     bottom: 60,
-    left: 55,
-    right: 55
+    left: 15,
+    right: 15
   };
 
   var clickedInfo = {};
