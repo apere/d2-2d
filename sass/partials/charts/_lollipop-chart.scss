@@ -1,0 +1,114 @@
+.basic-lollipop-chart {
+	line, circle, .axis path,
+	.axis line {
+		stroke: $chart-point-color;
+	}
+	.back-arrow {
+		cursor: pointer;
+		@extend %transitions;
+		fill-opacity: .2;
+		path {
+			fill: $chart-point-color;
+		}
+		&:hover {
+			fill-opacity: .6;
+		}
+	}
+	text {
+		font-size: $small-font-size;
+		-webkit-user-select: none;
+		/* Chrome all / Safari all */
+		-moz-user-select: none;
+		/* Firefox all */
+		-ms-user-select: none;
+		/* IE 10+ */
+		user-select: none;
+		/* Likely future */
+		cursor: default;
+		fill: $chart-point-color;
+	}
+	line {
+		stroke-width: 2px;
+		stroke-opacity: $default-lolli-opacity;
+		@extend %transitions;
+		stroke: $chart-point-color;
+		&.active {
+			stroke: $chart-point-highlight-color;
+		}
+	}
+	circle {
+		@extend %transitions;
+		stroke-width: 0;
+		stroke-opacity: .65;
+		fill-opacity: .7;
+		fill: $chart-point-color;
+		&.active {
+			fill: $chart-point-highlight-color;
+			stroke: $chart-point-highlight-color;
+		}
+	}
+	.hours-title {
+		.day-date {
+			fill-opacity: $default-lolli-opacity;
+			font-size: $large-font-size;
+		}
+	}
+	.label-post-count {
+		@extend %transitions;
+		opacity: 0;
+		pointer-events: none;
+		&.active {
+			opacity: 1;
+		}
+		rect {
+			fill: $chart-tooltip-color;
+		}
+		text {
+			fill: $chart-tooltip-text-color;
+			&.post-count-lab,
+			&.post-count-date {
+				opacity: $base-opacity;
+			}
+			&.post-count-numb {
+				font-size: $medium-font-size;
+			}
+			&.post-count-lab {
+				font-size: $small-font-size
+			}
+			&.post-count-date {
+				font-size: $small-font-size;
+			}
+		}
+		.hours-title {
+			.day-date {
+				fill: lighten($chart-point-color, 20%);
+				font-size: $medium-font-size;
+			}
+		}
+	}
+	.datum {
+		cursor: pointer;
+	}
+	line.active {
+		transition-timing-function: step-start;
+		stroke-width: 3px;
+		stroke-opacity: 1 !important;
+	}
+	circle.active {
+		stroke-width: 18px;
+		fill-opacity: 1 !important;
+	}
+	.axes {
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: white;
+			stroke-width: 1px;
+			shape-rendering: crispEdges;
+		}
+		text {
+			font-size: $small-font-size;
+			fill: $chart-point-color;
+		}
+	}
+}

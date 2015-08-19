@@ -45,7 +45,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-a, nav ul li {
+a, nav ul li, .basic-lollipop-chart .back-arrow, .basic-lollipop-chart line, .basic-lollipop-chart circle, .basic-lollipop-chart .label-post-count {
   transition: all 250ms ease-in-out; }
 
 html, body {
@@ -124,6 +124,84 @@ footer {
   fill: #4a4a4a; }
 .basic-line-chart .max-min-point line {
   stroke: #4a4a4a; }
+
+.basic-lollipop-chart line, .basic-lollipop-chart circle, .basic-lollipop-chart .axis path,
+.basic-lollipop-chart .axis line {
+  stroke: #4a4a4a; }
+.basic-lollipop-chart .back-arrow {
+  cursor: pointer;
+  fill-opacity: .2; }
+  .basic-lollipop-chart .back-arrow path {
+    fill: #4a4a4a; }
+  .basic-lollipop-chart .back-arrow:hover {
+    fill-opacity: .6; }
+.basic-lollipop-chart text {
+  font-size: 0.6em;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  cursor: default;
+  fill: #4a4a4a; }
+.basic-lollipop-chart line {
+  stroke-width: 2px;
+  stroke-opacity: 0.8;
+  stroke: #4a4a4a; }
+  .basic-lollipop-chart line.active {
+    stroke: rgba(193, 1, 1, 0.74); }
+.basic-lollipop-chart circle {
+  stroke-width: 0;
+  stroke-opacity: .65;
+  fill-opacity: .7;
+  fill: #4a4a4a; }
+  .basic-lollipop-chart circle.active {
+    fill: rgba(193, 1, 1, 0.74);
+    stroke: rgba(193, 1, 1, 0.74); }
+.basic-lollipop-chart .hours-title .day-date {
+  fill-opacity: 0.8;
+  font-size: 1.2em; }
+.basic-lollipop-chart .label-post-count {
+  opacity: 0;
+  pointer-events: none; }
+  .basic-lollipop-chart .label-post-count.active {
+    opacity: 1; }
+  .basic-lollipop-chart .label-post-count rect {
+    fill: rgba(74, 74, 74, 0.74); }
+  .basic-lollipop-chart .label-post-count text {
+    fill: rgba(255, 255, 255, 0.78); }
+    .basic-lollipop-chart .label-post-count text.post-count-lab, .basic-lollipop-chart .label-post-count text.post-count-date {
+      opacity: 0.9; }
+    .basic-lollipop-chart .label-post-count text.post-count-numb {
+      font-size: 0.85em; }
+    .basic-lollipop-chart .label-post-count text.post-count-lab {
+      font-size: 0.6em; }
+    .basic-lollipop-chart .label-post-count text.post-count-date {
+      font-size: 0.6em; }
+  .basic-lollipop-chart .label-post-count .hours-title .day-date {
+    fill: #7d7d7d;
+    font-size: 0.85em; }
+.basic-lollipop-chart .datum {
+  cursor: pointer; }
+.basic-lollipop-chart line.active {
+  transition-timing-function: step-start;
+  stroke-width: 3px;
+  stroke-opacity: 1 !important; }
+.basic-lollipop-chart circle.active {
+  stroke-width: 18px;
+  fill-opacity: 1 !important; }
+.basic-lollipop-chart .axes .axis path,
+.basic-lollipop-chart .axes .axis line {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+  shape-rendering: crispEdges; }
+.basic-lollipop-chart .axes text {
+  font-size: 0.6em;
+  fill: #4a4a4a; }
 
 @media only screen and (min-width: 800px) {
   .main-wrapper {

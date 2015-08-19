@@ -60,8 +60,8 @@ function makeExtraLine(sketchID, theData) {
 	var margin = {
 		top: 10,
 		bottom: 25,
-		left: 15,
-		right: 35
+		left: 10,
+		right: 10
 	};
 
 	var xScale = d3.time.scale().range([margin.left, widthn - margin.right]);
@@ -114,6 +114,8 @@ function makeExtraLine(sketchID, theData) {
 	var path = svg.append("path")
 		.attr("class", "line")
 		.attr("d", valueline(data));
+	
+	console.log(path);
 
 	var totalLength = path.node().getTotalLength();
 
@@ -128,10 +130,13 @@ function makeExtraLine(sketchID, theData) {
 		.ease("sin-out")
 		.attr("stroke-dashoffset", 0);
 
-	svg.append("g")
+	var xAxisG = svg.append("g")
 		.attr("class", "x axis")
 		.attr("transform", "translate(0," + (heightn - margin.bottom) + ")")
 		.call(xAxis);
+	
+	xAxisG.select('.tick text').style('text-anchor', 'start');
+	xAxisG.select('.tick:last-of-type text').style('text-anchor', 'end');
 
 	// **
 	// * Max/Min cicles and dotted lines
@@ -141,7 +146,7 @@ function makeExtraLine(sketchID, theData) {
 		.append('circle')
 		.attr('r', 3)
 		.attr('cx', xScale(data[0].startDate))
-		.attr('cy', yScale(data[0].numberOfDocuments))
+		.attr('cy', yScale(data[0].numberOfDocuments) + 2)
 		.attr('opacity', 0)
 		.transition()
 		.duration(1500)
@@ -152,7 +157,7 @@ function makeExtraLine(sketchID, theData) {
 		.append('circle')
 		.attr('r', 0)
 		.attr('cx', xScale(data[data.length - 1].startDate))
-		.attr('cy', yScale(data[data.length - 1].numberOfDocuments))
+		.attr('cy', yScale(data[data.length - 1].numberOfDocuments) + 2)
 		.attr('opacity', 0)
 		.transition()
 		.duration(1200)

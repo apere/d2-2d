@@ -1,6 +1,8 @@
-extends ../../templates/_module.jade
+extends ../../templates/_chart.jade
 block module-id
-	- var moduleID = "three";
+	- var ID = "one";
 block module-title 
-	= "three"
-block module-content
+	= "Basic Lollipop Bar Chart"
+block chart-attrs
+	- chartClass = "basic-lollipop-chart"
+	- chartID = "lollipop-chart-1"

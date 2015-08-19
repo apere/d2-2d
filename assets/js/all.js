@@ -5346,6 +5346,153 @@ $( document ).ready(function() {
     }
   ];
 	
+	var lollipopData = [
+		{
+			"key": "12 AM",
+			"hour": "0",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+		}, {
+			"key": "1 AM",
+			"hour": "1",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+		}, {
+			"key": "2 AM",
+			"hour": "2",
+			"numberOfDocuments": 1,
+			"numberOfPoints": 7,
+			"avg": 0.14285714285714285
+		}, {
+			"key": "3 AM",
+			"hour": "3",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+		}, {
+			"key": "4 AM",
+			"hour": "4",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+		}, {
+			"key": "5 AM",
+			"hour": "5",
+			"numberOfDocuments": 4,
+			"numberOfPoints": 7,
+			"avg": 0.5714285714285714
+		}, {
+			"key": "6 AM",
+			"hour": "6",
+			"numberOfDocuments": 1,
+			"numberOfPoints": 7,
+			"avg": 0.14285714285714285
+		}, {
+			"key": "7 AM",
+			"hour": "7",
+			"numberOfDocuments": 4,
+			"numberOfPoints": 7,
+			"avg": 0.5714285714285714
+		}, {
+			"key": "8 AM",
+			"hour": "8",
+			"numberOfDocuments": 3,
+			"numberOfPoints": 7,
+			"avg": 0.42857142857142855
+		}, {
+			"key": "9 AM",
+			"hour": "9",
+			"numberOfDocuments": 5,
+			"numberOfPoints": 7,
+			"avg": 0.7142857142857143
+		}, {
+			"key": "10 AM",
+			"hour": "10",
+			"numberOfDocuments": 4,
+			"numberOfPoints": 7,
+			"avg": 0.5714285714285714
+		}, {
+			"key": "11 AM",
+			"hour": "11",
+			"numberOfDocuments": 5,
+			"numberOfPoints": 7,
+			"avg": 0.7142857142857143
+		}, {
+			"key": "12 PM",
+			"hour": "12",
+			"numberOfDocuments": 3,
+			"numberOfPoints": 7,
+			"avg": 0.42857142857142855
+		}, {
+			"key": "1 PM",
+			"hour": "13",
+			"numberOfDocuments": 8,
+			"numberOfPoints": 7,
+			"avg": 1.1428571428571428
+		}, {
+			"key": "2 PM",
+			"hour": "14",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+		}, {
+			"key": "3 PM",
+			"hour": "15",
+			"numberOfDocuments": 5,
+			"numberOfPoints": 7,
+			"avg": 0.7142857142857143
+		}, {
+			"key": "4 PM",
+			"hour": "16",
+			"numberOfDocuments": 11,
+			"numberOfPoints": 7,
+			"avg": 1.5714285714285714
+		}, {
+			"key": "5 PM",
+			"hour": "17",
+			"numberOfDocuments": 3,
+			"numberOfPoints": 7,
+			"avg": 0.42857142857142855
+		}, {
+			"key": "6 PM",
+			"hour": "18",
+			"numberOfDocuments": 3,
+			"numberOfPoints": 7,
+			"avg": 0.42857142857142855
+		}, {
+			"key": "7 PM",
+			"hour": "19",
+			"numberOfDocuments": 1,
+			"numberOfPoints": 7,
+			"avg": 0.14285714285714285
+		}, {
+			"key": "8 PM",
+			"hour": "20",
+			"numberOfDocuments": 1,
+			"numberOfPoints": 7,
+			"avg": 0.14285714285714285
+		}, {
+			"key": "9 PM",
+			"hour": "21",
+			"numberOfDocuments": 7,
+			"numberOfPoints": 7,
+			"avg": 1
+		}, {
+			"key": "10 PM",
+			"hour": "22",
+			"numberOfDocuments": 3,
+			"numberOfPoints": 7,
+			"avg": 0.42857142857142855
+		}, {
+			"key": "11 PM",
+			"hour": "23",
+			"numberOfDocuments": 2,
+			"numberOfPoints": 7,
+			"avg": 0.2857142857142857
+	}];
+	
 	
 	// ****************
 	// * Navigation
@@ -5411,6 +5558,7 @@ $( document ).ready(function() {
 		$('.viz-content').html('');
 		makeBasicLine('#line-chart-1', basicLineData);
 		makeExtraLine('#line-chart-2', extraLineData);
+		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Day", 1, 'average posts on');
 	 }
 	
 	

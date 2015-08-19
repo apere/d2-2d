@@ -76,13 +76,13 @@ function makeBasicLine(sketchID, theData) {
 		.attr("class", "line")
 		.attr("d", valueline(data));
 
-	var xAxis = svg.append("g")
+	var xAxisG = svg.append("g")
 		.attr("class", "x axis")
 		.attr("transform", "translate(0," + (heightn - margin.bottom) + ")")
 		.call(xAxis);
 
-	xAxis.select('.tick text').style('text-anchor', 'start');
-	xAxis.select('.tick:last-of-type text').style('text-anchor', 'end');
+	xAxisG.select('.tick text').style('text-anchor', 'start');
+	xAxisG.select('.tick:last-of-type text').style('text-anchor', 'end');
 
 	// **
 	// * Creating first and last points 
