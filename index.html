@@ -7,12 +7,18 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/all.css">
     <script src="/assets/js/vendor/jquery.min.js"></script>
     <script src="/assets/js/vendor/d3.min.min.js"></script>
+    <script src="/assets/js/vendor/d3.chart.min.js"></script>
     <script src="/assets/js/charts/line-chart.min.js"></script>
     <script src="/assets/js/charts/extra-line-chart.min.js"></script>
     <script src="/assets/js/charts/lollipop-chart.min.js"></script>
+    <script src="/assets/js/charts/circle-line-compare-chart.min.js"></script>
+    <script src="/assets/js/charts/compare-two-circle-chart.min.js"></script>
+    <script src="/assets/js/charts/vertical-compare-bar-chart.min.js"></script>
+    <script src="/assets/js/charts/vertical-bar-chart.min.js"></script>
+    <script src="/assets/js/charts/block-chart.min.js"></script>
     <script src="/assets/js/index.min.js"></script>
     <!-- Target this block to append any page specific javascripts-->
-    <title>Application Title</title>
+    <title>Helpful Code Hints</title>
   </head>
   <body>
     <header id="index-hero" class="header">
@@ -20,19 +26,32 @@
         <div class="logo"> <img src="../assets/imgs/logo.png"><span class="logo-text"> Helpful Code Hints</span></div>
       </div>
     </header>
-    <nav>
-      <ul class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/d3/">d3.js</a></li>
-      </ul>
-    </nav>
+    <div class="nav-wrapper">
+      <nav>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li class="sub"><span>Charts</span>
+            <ul>
+              <li><a href="#basicline">Basic Line</a></li>
+              <li><a href="#extraline">Extra Line</a></li>
+              <li><a href="#lollipop">Basic Lollipop</a></li>
+              <li><a href="#circlelinecompare">Circle-Line Comparison</a></li>
+              <li><a href="#comparetwo">Compare Two</a></li>
+              <li><a href="#basicverticalbarchart">Basic Vertical Bar</a></li>
+              <li><a href="#verticalcomparebarchart">Vertical Comparison Bar</a></li>
+              <li><a href="#blockchart">Block</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- Target this block and set a javascript variable equal to the id that you want the container to have-->
     <!-- This is useful when you want to have a different ID for the main container on each page-->
     <main class="main-container">
       <div class="content">
         <!-- Target this block to append the main content of the page-->
-        <section class="module">
+        <section id="basicline" class="module">
           <div class="module-info">
             <h1 class="title">Basic Line Chart
             </h1>
@@ -42,7 +61,7 @@
           </div>
         </section>
         <hr><br>
-        <section class="module">
+        <section id="extraline" class="module">
           <div class="module-info">
             <h1 class="title">Extra Line Chart
             </h1>
@@ -52,12 +71,64 @@
           </div>
         </section>
         <hr><br>
-        <section class="module">
+        <section id="lollipop" class="module">
           <div class="module-info">
             <h1 class="title">Basic Lollipop Bar Chart
             </h1>
           </div>
           <div id="lollipop-chart-1" class="module sketch basic-lollipop-chart">
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="circlelinecompare" class="module">
+          <div class="module-info">
+            <h1 class="title">Circle-Line Comparison Chart
+            </h1>
+          </div>
+          <div id="circle-line-compare-chart-1" class="module sketch circle-line-compare-chart">
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="comparetwo" class="module">
+          <div class="module-info">
+            <h1 class="title">Compare Two
+            </h1>
+          </div>
+          <div id="circle-compare-chart-1" class="module sketch circle-line-compare-chart">
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="basicverticalbarchart" class="module">
+          <div class="module-info">
+            <h1 class="title">Basic Vertical Bar Chart
+            </h1>
+          </div>
+          <div id="vertical-bar-2" class="module sketch basic-bar-chart no-legend">
+            <div class="chart-title">Security Risk</div>
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="verticalcomparebarchart" class="module">
+          <div class="module-info">
+            <h1 class="title">Vertical Comparison Bar Chart
+            </h1>
+          </div>
+          <div id="vertical-bar-1" class="module sketch basic-bar-chart">
+            <ul class="viz-labels"></ul>
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="blockchart" class="module">
+          <div class="module-info">
+            <h1 class="title">Block Chart
+            </h1>
+          </div>
+          <div id="block-chart-1" class="module sketch block-chart">
             <figure class="viz-content"></figure>
           </div>
         </section>

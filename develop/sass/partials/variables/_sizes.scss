@@ -1,7 +1,8 @@
 // All size variables (other than font-sizes) go here
 
 // Margin
-$base-margin: 1em;
+$base-margin: 2em;
+$small-margin: 1em;
 
 // Padding
 $base-padding: 1em;
@@ -11,9 +12,10 @@ $footer-padding: $header-padding;
 
 // Heights
 $footer-height: 3em;
+$header-height: 82px;
 
 // Widths
-$nav-width: 100px;
+$nav-width: 135px;
 
 // Opacity
 $base-opacity: .9;

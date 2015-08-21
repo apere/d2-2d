@@ -1,6 +1,7 @@
 html, body {
   font-family: $font-serif;
   font-size: $base-font-size;
+  line-height: 1.3em;
 }
 
 svg {
@@ -14,7 +15,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: $base-margin;
+	margin-bottom: $small-margin;
 }
 
 h1 {
@@ -64,7 +65,9 @@ b {
 }
 
 code {
-	
+	font-family: monospace;
+	padding: 0 .5em;
+	background-color: rgba(128, 128, 128, 0.28);
 }
 
 i {
@@ -127,7 +130,7 @@ u {
 // *** Block Text Options ***
 
 p {
-	
+	margin-bottom: 1em;
 }
 
 blockquote, .quote {
@@ -157,6 +160,19 @@ dl {
 
 figcaption {
 	
+}
+
+pre {
+	background-color: rgba(128, 128, 128, 0.28);
+	padding: 1em 1.5em;
+	width: auto;
+	margin: 2em auto;
+  overflow-x: scroll;
+	code {
+    width: auto;
+		display: block;
+		background-color: transparent;
+	}
 }
 
 // *** End Block Text Options ***

@@ -1,0 +1,57 @@
+.basic-bar-chart {
+  
+  .chart-title {
+    font-weight: $bold;  
+  }
+  
+  text {
+    font-family: $font-serif;  
+    color: $chart-text-color;
+  }
+  
+  .point {
+    rect {
+      fill:  $chart-point-color;
+    }
+  }
+  
+  .viz-labels {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    padding: 0px;
+    
+    li {
+      line-height: 13px;
+      font-size: 9px;
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+  .viz-content {
+    display: inline-block; 
+    width: calc(100% - 190px);
+    vertical-align: top;
+  }
+  
+  &.no-legend {
+    .viz-content {
+      width: 100%; 
+    }
+  }
+  .monitor-point {
+    fill: $chart-point-color;
+  }
+  .twitter-point {
+    fill: lighten($chart-point-color, 30%);
+  }
+  .point-container {
+    fill: rgba(160, 160, 160, 0.1);
+  }
+  line {
+    stroke: $chart-point-color;
+  }
+  .rel-rect {
+    fill: $chart-point-color;
+  }
+}

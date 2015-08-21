@@ -1,13 +1,41 @@
 extends _layout.jade
+block specific-javascripts
+  script(src="/assets/js/vendor/d3.chart.min.js")
+  script(src="/assets/js/charts/line-chart.min.js")
+  script(src="/assets/js/charts/extra-line-chart.min.js")
+  script(src="/assets/js/charts/lollipop-chart.min.js")
+  script(src="/assets/js/charts/circle-line-compare-chart.min.js")
+  script(src="/assets/js/charts/compare-two-circle-chart.min.js")
+  script(src="/assets/js/charts/vertical-compare-bar-chart.min.js")
+  script(src="/assets/js/charts/vertical-bar-chart.min.js")
+  script(src="/assets/js/charts/block-chart.min.js")
+  script(src="/assets/js/index.min.js")
 block hero-id
-	- var heroID = "index-hero"
+  - var heroID = "index-hero"
 block header-text
-	| Helpful Code Hints
+  | Helpful Code Hints
+block additional-nav
+  include partials/_index-nav.jade
 block content
-	include modules/homepage/one.jade
-	hr
-	br
-	include modules/homepage/two.jade
-	hr
-	br
-	include modules/homepage/three.jade
+  include modules/homepage/_basic-line.jade
+  hr
+  br
+  include modules/homepage/_extra-line.jade
+  hr
+  br
+  include modules/homepage/_lollipop.jade
+  hr
+  br
+  include modules/homepage/_circle-line-compare.jade
+  hr
+  br
+  include modules/homepage/_circle-compare-two.jade
+  hr
+  br
+  include modules/homepage/_basic-vertical-bar.jade
+  hr
+  br
+  include modules/homepage/_vertical-compare-bar.jade
+  hr
+  br
+  include modules/homepage/_block.jade

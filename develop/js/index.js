@@ -5492,8 +5492,1435 @@ $( document ).ready(function() {
 			"numberOfPoints": 7,
 			"avg": 0.2857142857142857
 	}];
+  
+  var circleLineData = {
+  "startDate": "2010-06-29T00:00:00",
+  "endDate": "2015-07-09T00:00:00",
+  "affinityInfo": [
+    {
+      "id": 9718,
+      "name": "Human-Computer Interaction",
+      "relevancyScore": 72,
+      "percentInMonitor": 7.492,
+      "percentOnTwitter": 0.001
+    },
+    {
+      "id": 3734,
+      "name": "User Experience Design",
+      "relevancyScore": 66.4,
+      "percentInMonitor": 9.96,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 9383,
+      "name": "GitHub",
+      "relevancyScore": 36.9,
+      "percentInMonitor": 6.021,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3699,
+      "name": "Web Design",
+      "relevancyScore": 31.9,
+      "percentInMonitor": 8.611,
+      "percentOnTwitter": 0.213
+    },
+    {
+      "id": 917,
+      "name": "Social Innovation",
+      "relevancyScore": 29.8,
+      "percentInMonitor": 4.677,
+      "percentOnTwitter": 0.008
+    },
+    {
+      "id": 4788,
+      "name": "Outdoor Heating and Fire Pits",
+      "relevancyScore": 27.2,
+      "percentInMonitor": 4.908,
+      "percentOnTwitter": 0.019
+    },
+    {
+      "id": 1121,
+      "name": "Columbus",
+      "relevancyScore": 18.8,
+      "percentInMonitor": 5.156,
+      "percentOnTwitter": 0.136
+    },
+    {
+      "id": 8484,
+      "name": "Portland Maine",
+      "relevancyScore": 16.4,
+      "percentInMonitor": 2.33,
+      "percentOnTwitter": 0.002
+    },
+    {
+      "id": 3484,
+      "name": "Product Design",
+      "relevancyScore": 15.6,
+      "percentInMonitor": 3.287,
+      "percentOnTwitter": 0.028
+    },
+    {
+      "id": 433,
+      "name": "Innovation",
+      "relevancyScore": 15.3,
+      "percentInMonitor": 5.219,
+      "percentOnTwitter": 0.281
+    },
+    {
+      "id": 6068,
+      "name": "Visualization",
+      "relevancyScore": 13.6,
+      "percentInMonitor": 2.324,
+      "percentOnTwitter": 0.007
+    },
+    {
+      "id": 1395,
+      "name": "Boston",
+      "relevancyScore": 13,
+      "percentInMonitor": 6.252,
+      "percentOnTwitter": 0.786
+    },
+    {
+      "id": 115,
+      "name": "Health",
+      "relevancyScore": 11.5,
+      "percentInMonitor": 16.408,
+      "percentOnTwitter": 8.121
+    },
+    {
+      "id": 37,
+      "name": "CSS",
+      "relevancyScore": 11.3,
+      "percentInMonitor": 3.743,
+      "percentOnTwitter": 0.185
+    },
+    {
+      "id": 41,
+      "name": "Social Entrepreneurship",
+      "relevancyScore": 11.2,
+      "percentInMonitor": 2.434,
+      "percentOnTwitter": 0.024
+    },
+    {
+      "id": 1025,
+      "name": "FOREX",
+      "relevancyScore": 11,
+      "percentInMonitor": 3.132,
+      "percentOnTwitter": 0.092
+    },
+    {
+      "id": 3766,
+      "name": "Information Architecture",
+      "relevancyScore": 10.2,
+      "percentInMonitor": 2.117,
+      "percentOnTwitter": 0.017
+    },
+    {
+      "id": 8890,
+      "name": "Homelessness",
+      "relevancyScore": 10,
+      "percentInMonitor": 1.84,
+      "percentOnTwitter": 0.008
+    },
+    {
+      "id": 8550,
+      "name": "Microsoft Sharepoint",
+      "relevancyScore": 9.1,
+      "percentInMonitor": 1.43,
+      "percentOnTwitter": 0.003
+    },
+    {
+      "id": 1128,
+      "name": "Blogging",
+      "relevancyScore": 8.3,
+      "percentInMonitor": 2.255,
+      "percentOnTwitter": 0.058
+    },
+    {
+      "id": 904,
+      "name": "Entrepreneurship",
+      "relevancyScore": 8.2,
+      "percentInMonitor": 4.037,
+      "percentOnTwitter": 0.527
+    },
+    {
+      "id": 3477,
+      "name": "Maine",
+      "relevancyScore": 8.2,
+      "percentInMonitor": 2.238,
+      "percentOnTwitter": 0.058
+    },
+    {
+      "id": 4082,
+      "name": "New Democratic Party",
+      "relevancyScore": 6.4,
+      "percentInMonitor": 1.373,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3619,
+      "name": "Water Sports",
+      "relevancyScore": 5.9,
+      "percentInMonitor": 1.413,
+      "percentOnTwitter": 0.021
+    },
+    {
+      "id": 617,
+      "name": "Management",
+      "relevancyScore": 5.6,
+      "percentInMonitor": 3.501,
+      "percentOnTwitter": 0.704
+    },
+    {
+      "id": 4081,
+      "name": "Dining Rooms",
+      "relevancyScore": 5.4,
+      "percentInMonitor": 1.188,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3767,
+      "name": "Popular Science",
+      "relevancyScore": 5,
+      "percentInMonitor": 1.326,
+      "percentOnTwitter": 0.03
+    },
+    {
+      "id": 3456,
+      "name": "Typography",
+      "relevancyScore": 4.8,
+      "percentInMonitor": 1.28,
+      "percentOnTwitter": 0.03
+    },
+    {
+      "id": 236,
+      "name": "Software Development",
+      "relevancyScore": 4.6,
+      "percentInMonitor": 5.658,
+      "percentOnTwitter": 2.488
+    },
+    {
+      "id": 711,
+      "name": "Information Security",
+      "relevancyScore": 4.5,
+      "percentInMonitor": 1.188,
+      "percentOnTwitter": 0.028
+    },
+    {
+      "id": 762,
+      "name": "eBooks",
+      "relevancyScore": 4.4,
+      "percentInMonitor": 1.574,
+      "percentOnTwitter": 0.095
+    },
+    {
+      "id": 3587,
+      "name": "Online Learning",
+      "relevancyScore": 4.2,
+      "percentInMonitor": 1.096,
+      "percentOnTwitter": 0.024
+    },
+    {
+      "id": 3667,
+      "name": "Personal Finance",
+      "relevancyScore": 3.6,
+      "percentInMonitor": 1.707,
+      "percentOnTwitter": 0.211
+    },
+    {
+      "id": 2985,
+      "name": "Backpacking",
+      "relevancyScore": 3.4,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.027
+    },
+    {
+      "id": 3320,
+      "name": "Internet Radio",
+      "relevancyScore": 3.3,
+      "percentInMonitor": 1.303,
+      "percentOnTwitter": 0.104
+    },
+    {
+      "id": 220,
+      "name": "Writing",
+      "relevancyScore": 3.2,
+      "percentInMonitor": 3.645,
+      "percentOnTwitter": 1.526
+    },
+    {
+      "id": 341,
+      "name": "Self-Improvement",
+      "relevancyScore": 3.1,
+      "percentInMonitor": 1.43,
+      "percentOnTwitter": 0.162
+    },
+    {
+      "id": 3730,
+      "name": "Politico",
+      "relevancyScore": 3,
+      "percentInMonitor": 1.632,
+      "percentOnTwitter": 0.255
+    },
+    {
+      "id": 710,
+      "name": "Publishing",
+      "relevancyScore": 3,
+      "percentInMonitor": 2.042,
+      "percentOnTwitter": 0.467
+    },
+    {
+      "id": 2816,
+      "name": "Handbags",
+      "relevancyScore": 3,
+      "percentInMonitor": 1.194,
+      "percentOnTwitter": 0.099
+    },
+    {
+      "id": 2422,
+      "name": "Book Publishing",
+      "relevancyScore": 2.9,
+      "percentInMonitor": 1.205,
+      "percentOnTwitter": 0.111
+    },
+    {
+      "id": 3614,
+      "name": "Creativity",
+      "relevancyScore": 2.6,
+      "percentInMonitor": 1.396,
+      "percentOnTwitter": 0.213
+    },
+    {
+      "id": 3082,
+      "name": "JavaScript",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.055,
+      "percentOnTwitter": 0.094
+    },
+    {
+      "id": 2744,
+      "name": "India",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.5,
+      "percentOnTwitter": 0.275
+    },
+    {
+      "id": 3009,
+      "name": "Edinburgh",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 0.992,
+      "percentOnTwitter": 0.08
+    },
+    {
+      "id": 936,
+      "name": "Architecture",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.321,
+      "percentOnTwitter": 0.201
+    },
+    {
+      "id": 627,
+      "name": "Social Justice",
+      "relevancyScore": 2.2,
+      "percentInMonitor": 1.5,
+      "percentOnTwitter": 0.34
+    },
+    {
+      "id": 2084,
+      "name": "Univision",
+      "relevancyScore": 2,
+      "percentInMonitor": 1.194,
+      "percentOnTwitter": 0.23
+    },
+    {
+      "id": 3866,
+      "name": "Personal Development",
+      "relevancyScore": 1.8,
+      "percentInMonitor": 1.055,
+      "percentOnTwitter": 0.19
+    },
+    {
+      "id": 460,
+      "name": "Scotland",
+      "relevancyScore": 1.8,
+      "percentInMonitor": 1.009,
+      "percentOnTwitter": 0.169
+    },
+    {
+      "id": 329,
+      "name": "Advertising",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.73,
+      "percentOnTwitter": 0.668
+    },
+    {
+      "id": 827,
+      "name": "Biology",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.471,
+      "percentOnTwitter": 0.486
+    },
+    {
+      "id": 1210,
+      "name": "Ohio",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.038,
+      "percentOnTwitter": 0.217
+    },
+    {
+      "id": 228,
+      "name": "Xbox 360",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.488,
+      "percentOnTwitter": 0.505
+    },
+    {
+      "id": 3843,
+      "name": "SAAS",
+      "relevancyScore": 1.4,
+      "percentInMonitor": 0.784,
+      "percentOnTwitter": 0.13
+    },
+    {
+      "id": 379,
+      "name": "Leadership",
+      "relevancyScore": 1.1,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.299
+    },
+    {
+      "id": 668,
+      "name": "Affordable Care Act",
+      "relevancyScore": 1.1,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.306
+    },
+    {
+      "id": 3691,
+      "name": "Sales",
+      "relevancyScore": 0.9,
+      "percentInMonitor": 0.859,
+      "percentOnTwitter": 0.3
+    },
+    {
+      "id": 239,
+      "name": "Spirituality",
+      "relevancyScore": 0.7,
+      "percentInMonitor": 1.263,
+      "percentOnTwitter": 0.698
+    },
+    {
+      "id": 3877,
+      "name": "Bbc Radio 1",
+      "relevancyScore": 0.6,
+      "percentInMonitor": 0.756,
+      "percentOnTwitter": 0.354
+    },
+    {
+      "id": 471,
+      "name": "Nature",
+      "relevancyScore": 0.6,
+      "percentInMonitor": 2.024,
+      "percentOnTwitter": 1.542
+    },
+    {
+      "id": 337,
+      "name": "Healing",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.784,
+      "percentOnTwitter": 0.511
+    },
+    {
+      "id": 423,
+      "name": "Activism",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 1.39,
+      "percentOnTwitter": 1.094
+    },
+    {
+      "id": 1454,
+      "name": "Middle East",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.802,
+      "percentOnTwitter": 0.531
+    },
+    {
+      "id": 626,
+      "name": "Law",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 1.252,
+      "percentOnTwitter": 0.997
+    },
+    {
+      "id": 343,
+      "name": "Metal",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.796,
+      "percentOnTwitter": 0.561
+    },
+    {
+      "id": 1108,
+      "name": "Physics",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.79,
+      "percentOnTwitter": 0.56
+    },
+    {
+      "id": 548,
+      "name": "Fiction",
+      "relevancyScore": 0.2,
+      "percentInMonitor": 0.83,
+      "percentOnTwitter": 0.682
+    },
+    {
+      "id": 3838,
+      "name": "Literature",
+      "relevancyScore": 0.1,
+      "percentInMonitor": 1.621,
+      "percentOnTwitter": 1.506
+    },
+    {
+      "id": 782,
+      "name": "R&B",
+      "relevancyScore": 0,
+      "percentInMonitor": 1.505,
+      "percentOnTwitter": 1.46
+    },
+    {
+      "id": 625,
+      "name": "Economics",
+      "relevancyScore": 0,
+      "percentInMonitor": 0.894,
+      "percentOnTwitter": 0.884
+    },
+    {
+      "id": 1016,
+      "name": "Design",
+      "relevancyScore": -0.1,
+      "percentInMonitor": 1.736,
+      "percentOnTwitter": 1.825
+    },
+    {
+      "id": 1412,
+      "name": "Diseases",
+      "relevancyScore": -0.1,
+      "percentInMonitor": 0.756,
+      "percentOnTwitter": 0.92
+    },
+    {
+      "id": 447,
+      "name": "Venezuela",
+      "relevancyScore": -0.2,
+      "percentInMonitor": 0.975,
+      "percentOnTwitter": 1.224
+    },
+    {
+      "id": 176,
+      "name": "SoundCloud",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 0.992,
+      "percentOnTwitter": 1.29
+    },
+    {
+      "id": 1147,
+      "name": "Canada",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 1.067,
+      "percentOnTwitter": 1.399
+    },
+    {
+      "id": 1406,
+      "name": "Apple",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 2.047,
+      "percentOnTwitter": 2.367
+    },
+    {
+      "id": 835,
+      "name": "London",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 1.569,
+      "percentOnTwitter": 1.982
+    },
+    {
+      "id": 270,
+      "name": "Fitness",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 3.639,
+      "percentOnTwitter": 4.041
+    },
+    {
+      "id": 157,
+      "name": "Philosophy",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 0.767,
+      "percentOnTwitter": 1.265
+    },
+    {
+      "id": 373,
+      "name": "Health Care",
+      "relevancyScore": -0.5,
+      "percentInMonitor": 2.318,
+      "percentOnTwitter": 2.884
+    },
+    {
+      "id": 3274,
+      "name": "Finance",
+      "relevancyScore": -0.6,
+      "percentInMonitor": 1.961,
+      "percentOnTwitter": 2.71
+    },
+    {
+      "id": 572,
+      "name": "Egypt",
+      "relevancyScore": -0.7,
+      "percentInMonitor": 0.779,
+      "percentOnTwitter": 1.797
+    },
+    {
+      "id": 955,
+      "name": "Madrid",
+      "relevancyScore": -0.8,
+      "percentInMonitor": 0.767,
+      "percentOnTwitter": 2.233
+    },
+    {
+      "id": 596,
+      "name": "Actors",
+      "relevancyScore": -1,
+      "percentInMonitor": 1.009,
+      "percentOnTwitter": 2.814
+    },
+    {
+      "id": 531,
+      "name": "NFL",
+      "relevancyScore": -1.1,
+      "percentInMonitor": 1.177,
+      "percentOnTwitter": 2.949
+    },
+    {
+      "id": 492,
+      "name": "Barcelona",
+      "relevancyScore": -1.2,
+      "percentInMonitor": 0.905,
+      "percentOnTwitter": 3.247
+    },
+    {
+      "id": 33,
+      "name": "Spain",
+      "relevancyScore": -1.2,
+      "percentInMonitor": 1.309,
+      "percentOnTwitter": 3.255
+    },
+    {
+      "id": 534,
+      "name": "World News",
+      "relevancyScore": -1.3,
+      "percentInMonitor": 2.255,
+      "percentOnTwitter": 3.942
+    },
+    {
+      "id": 3859,
+      "name": "Beauty",
+      "relevancyScore": -1.4,
+      "percentInMonitor": 1.136,
+      "percentOnTwitter": 3.853
+    },
+    {
+      "id": 650,
+      "name": "Cars",
+      "relevancyScore": -1.4,
+      "percentInMonitor": 1.027,
+      "percentOnTwitter": 4.16
+    },
+    {
+      "id": 472,
+      "name": "Baseball",
+      "relevancyScore": -1.6,
+      "percentInMonitor": 0.796,
+      "percentOnTwitter": 5.861
+    },
+    {
+      "id": 657,
+      "name": "News and Media",
+      "relevancyScore": -2,
+      "percentInMonitor": 3.235,
+      "percentOnTwitter": 5.968
+    },
+    {
+      "id": 320,
+      "name": "Hip Hop",
+      "relevancyScore": -2.3,
+      "percentInMonitor": 1.309,
+      "percentOnTwitter": 7.599
+    },
+    {
+      "id": 361,
+      "name": "Games",
+      "relevancyScore": -2.3,
+      "percentInMonitor": 1.113,
+      "percentOnTwitter": 8.822
+    },
+    {
+      "id": 494,
+      "name": "Video Games",
+      "relevancyScore": -3.2,
+      "percentInMonitor": 2.566,
+      "percentOnTwitter": 9.07
+    },
+    {
+      "id": 253,
+      "name": "Fashion",
+      "relevancyScore": -3.7,
+      "percentInMonitor": 2.388,
+      "percentOnTwitter": 11.03
+    },
+    {
+      "id": 172,
+      "name": "Science and Technology",
+      "relevancyScore": -3.8,
+      "percentInMonitor": 9.02,
+      "percentOnTwitter": 13.721
+    },
+    {
+      "id": 1087,
+      "name": "Basketball",
+      "relevancyScore": -4.5,
+      "percentInMonitor": 2.267,
+      "percentOnTwitter": 16.791
+    },
+    {
+      "id": 1142,
+      "name": "Soccer",
+      "relevancyScore": -8.8,
+      "percentInMonitor": 4.608,
+      "percentOnTwitter": 31.166
+    }
+  ],
+  "status": "success"
+};
+  
+  var compare2Data = [
+  {
+    'name': 'User Experience',
+    'value': 60
+  },
+  {
+    'name': 'Wrestling',
+    'value': 30
+  }
+];
 	
+  var verticalBarData = [
+    {
+      "id": 9718,
+      "name": "Human-Computer Interaction",
+      "relevancyScore": 72,
+      "percentInMonitor": 7.492,
+      "percentOnTwitter": 0.001
+    },
+    {
+      "id": 3734,
+      "name": "User Experience Design",
+      "relevancyScore": 66.4,
+      "percentInMonitor": 9.96,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 9383,
+      "name": "GitHub",
+      "relevancyScore": 36.9,
+      "percentInMonitor": 6.021,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3699,
+      "name": "Web Design",
+      "relevancyScore": 31.9,
+      "percentInMonitor": 8.611,
+      "percentOnTwitter": 0.213
+    },
+    {
+      "id": 917,
+      "name": "Social Innovation",
+      "relevancyScore": 29.8,
+      "percentInMonitor": 4.677,
+      "percentOnTwitter": 0.008
+    },
+    {
+      "id": 4788,
+      "name": "Outdoor Heating and Fire Pits",
+      "relevancyScore": 27.2,
+      "percentInMonitor": 4.908,
+      "percentOnTwitter": 0.019
+    },
+    {
+      "id": 1121,
+      "name": "Columbus",
+      "relevancyScore": 18.8,
+      "percentInMonitor": 5.156,
+      "percentOnTwitter": 0.136
+    },
+    {
+      "id": 8484,
+      "name": "Portland Maine",
+      "relevancyScore": 16.4,
+      "percentInMonitor": 2.33,
+      "percentOnTwitter": 0.002
+    },
+    {
+      "id": 3484,
+      "name": "Product Design",
+      "relevancyScore": 15.6,
+      "percentInMonitor": 3.287,
+      "percentOnTwitter": 0.028
+    },
+    {
+      "id": 433,
+      "name": "Innovation",
+      "relevancyScore": 15.3,
+      "percentInMonitor": 5.219,
+      "percentOnTwitter": 0.281
+    },
+    {
+      "id": 6068,
+      "name": "Visualization",
+      "relevancyScore": 13.6,
+      "percentInMonitor": 2.324,
+      "percentOnTwitter": 0.007
+    },
+    {
+      "id": 1395,
+      "name": "Boston",
+      "relevancyScore": 13,
+      "percentInMonitor": 6.252,
+      "percentOnTwitter": 0.786
+    },
+    {
+      "id": 115,
+      "name": "Health",
+      "relevancyScore": 11.5,
+      "percentInMonitor": 16.408,
+      "percentOnTwitter": 8.121
+    },
+    {
+      "id": 37,
+      "name": "CSS",
+      "relevancyScore": 11.3,
+      "percentInMonitor": 3.743,
+      "percentOnTwitter": 0.185
+    },
+    {
+      "id": 41,
+      "name": "Social Entrepreneurship",
+      "relevancyScore": 11.2,
+      "percentInMonitor": 2.434,
+      "percentOnTwitter": 0.024
+    },
+    {
+      "id": 1025,
+      "name": "FOREX",
+      "relevancyScore": 11,
+      "percentInMonitor": 3.132,
+      "percentOnTwitter": 0.092
+    },
+    {
+      "id": 3766,
+      "name": "Information Architecture",
+      "relevancyScore": 10.2,
+      "percentInMonitor": 2.117,
+      "percentOnTwitter": 0.017
+    },
+    {
+      "id": 8890,
+      "name": "Homelessness",
+      "relevancyScore": 10,
+      "percentInMonitor": 1.84,
+      "percentOnTwitter": 0.008
+    },
+    {
+      "id": 8550,
+      "name": "Microsoft Sharepoint",
+      "relevancyScore": 9.1,
+      "percentInMonitor": 1.43,
+      "percentOnTwitter": 0.003
+    },
+    {
+      "id": 1128,
+      "name": "Blogging",
+      "relevancyScore": 8.3,
+      "percentInMonitor": 2.255,
+      "percentOnTwitter": 0.058
+    },
+    {
+      "id": 904,
+      "name": "Entrepreneurship",
+      "relevancyScore": 8.2,
+      "percentInMonitor": 4.037,
+      "percentOnTwitter": 0.527
+    },
+    {
+      "id": 3477,
+      "name": "Maine",
+      "relevancyScore": 8.2,
+      "percentInMonitor": 2.238,
+      "percentOnTwitter": 0.058
+    },
+    {
+      "id": 4082,
+      "name": "New Democratic Party",
+      "relevancyScore": 6.4,
+      "percentInMonitor": 1.373,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3619,
+      "name": "Water Sports",
+      "relevancyScore": 5.9,
+      "percentInMonitor": 1.413,
+      "percentOnTwitter": 0.021
+    },
+    {
+      "id": 617,
+      "name": "Management",
+      "relevancyScore": 5.6,
+      "percentInMonitor": 3.501,
+      "percentOnTwitter": 0.704
+    },
+    {
+      "id": 4081,
+      "name": "Dining Rooms",
+      "relevancyScore": 5.4,
+      "percentInMonitor": 1.188,
+      "percentOnTwitter": 0.013
+    },
+    {
+      "id": 3767,
+      "name": "Popular Science",
+      "relevancyScore": 5,
+      "percentInMonitor": 1.326,
+      "percentOnTwitter": 0.03
+    },
+    {
+      "id": 3456,
+      "name": "Typography",
+      "relevancyScore": 4.8,
+      "percentInMonitor": 1.28,
+      "percentOnTwitter": 0.03
+    },
+    {
+      "id": 236,
+      "name": "Software Development",
+      "relevancyScore": 4.6,
+      "percentInMonitor": 5.658,
+      "percentOnTwitter": 2.488
+    },
+    {
+      "id": 711,
+      "name": "Information Security",
+      "relevancyScore": 4.5,
+      "percentInMonitor": 1.188,
+      "percentOnTwitter": 0.028
+    },
+    {
+      "id": 762,
+      "name": "eBooks",
+      "relevancyScore": 4.4,
+      "percentInMonitor": 1.574,
+      "percentOnTwitter": 0.095
+    },
+    {
+      "id": 3587,
+      "name": "Online Learning",
+      "relevancyScore": 4.2,
+      "percentInMonitor": 1.096,
+      "percentOnTwitter": 0.024
+    },
+    {
+      "id": 3667,
+      "name": "Personal Finance",
+      "relevancyScore": 3.6,
+      "percentInMonitor": 1.707,
+      "percentOnTwitter": 0.211
+    },
+    {
+      "id": 2985,
+      "name": "Backpacking",
+      "relevancyScore": 3.4,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.027
+    },
+    {
+      "id": 3320,
+      "name": "Internet Radio",
+      "relevancyScore": 3.3,
+      "percentInMonitor": 1.303,
+      "percentOnTwitter": 0.104
+    },
+    {
+      "id": 220,
+      "name": "Writing",
+      "relevancyScore": 3.2,
+      "percentInMonitor": 3.645,
+      "percentOnTwitter": 1.526
+    },
+    {
+      "id": 341,
+      "name": "Self-Improvement",
+      "relevancyScore": 3.1,
+      "percentInMonitor": 1.43,
+      "percentOnTwitter": 0.162
+    },
+    {
+      "id": 3730,
+      "name": "Politico",
+      "relevancyScore": 3,
+      "percentInMonitor": 1.632,
+      "percentOnTwitter": 0.255
+    },
+    {
+      "id": 710,
+      "name": "Publishing",
+      "relevancyScore": 3,
+      "percentInMonitor": 2.042,
+      "percentOnTwitter": 0.467
+    },
+    {
+      "id": 2816,
+      "name": "Handbags",
+      "relevancyScore": 3,
+      "percentInMonitor": 1.194,
+      "percentOnTwitter": 0.099
+    },
+    {
+      "id": 2422,
+      "name": "Book Publishing",
+      "relevancyScore": 2.9,
+      "percentInMonitor": 1.205,
+      "percentOnTwitter": 0.111
+    },
+    {
+      "id": 3614,
+      "name": "Creativity",
+      "relevancyScore": 2.6,
+      "percentInMonitor": 1.396,
+      "percentOnTwitter": 0.213
+    },
+    {
+      "id": 3082,
+      "name": "JavaScript",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.055,
+      "percentOnTwitter": 0.094
+    },
+    {
+      "id": 2744,
+      "name": "India",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.5,
+      "percentOnTwitter": 0.275
+    },
+    {
+      "id": 3009,
+      "name": "Edinburgh",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 0.992,
+      "percentOnTwitter": 0.08
+    },
+    {
+      "id": 936,
+      "name": "Architecture",
+      "relevancyScore": 2.5,
+      "percentInMonitor": 1.321,
+      "percentOnTwitter": 0.201
+    },
+    {
+      "id": 627,
+      "name": "Social Justice",
+      "relevancyScore": 2.2,
+      "percentInMonitor": 1.5,
+      "percentOnTwitter": 0.34
+    },
+    {
+      "id": 2084,
+      "name": "Univision",
+      "relevancyScore": 2,
+      "percentInMonitor": 1.194,
+      "percentOnTwitter": 0.23
+    },
+    {
+      "id": 3866,
+      "name": "Personal Development",
+      "relevancyScore": 1.8,
+      "percentInMonitor": 1.055,
+      "percentOnTwitter": 0.19
+    },
+    {
+      "id": 460,
+      "name": "Scotland",
+      "relevancyScore": 1.8,
+      "percentInMonitor": 1.009,
+      "percentOnTwitter": 0.169
+    },
+    {
+      "id": 329,
+      "name": "Advertising",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.73,
+      "percentOnTwitter": 0.668
+    },
+    {
+      "id": 827,
+      "name": "Biology",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.471,
+      "percentOnTwitter": 0.486
+    },
+    {
+      "id": 1210,
+      "name": "Ohio",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.038,
+      "percentOnTwitter": 0.217
+    },
+    {
+      "id": 228,
+      "name": "Xbox 360",
+      "relevancyScore": 1.6,
+      "percentInMonitor": 1.488,
+      "percentOnTwitter": 0.505
+    },
+    {
+      "id": 3843,
+      "name": "SAAS",
+      "relevancyScore": 1.4,
+      "percentInMonitor": 0.784,
+      "percentOnTwitter": 0.13
+    },
+    {
+      "id": 379,
+      "name": "Leadership",
+      "relevancyScore": 1.1,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.299
+    },
+    {
+      "id": 668,
+      "name": "Affordable Care Act",
+      "relevancyScore": 1.1,
+      "percentInMonitor": 0.963,
+      "percentOnTwitter": 0.306
+    },
+    {
+      "id": 3691,
+      "name": "Sales",
+      "relevancyScore": 0.9,
+      "percentInMonitor": 0.859,
+      "percentOnTwitter": 0.3
+    },
+    {
+      "id": 239,
+      "name": "Spirituality",
+      "relevancyScore": 0.7,
+      "percentInMonitor": 1.263,
+      "percentOnTwitter": 0.698
+    },
+    {
+      "id": 3877,
+      "name": "Bbc Radio 1",
+      "relevancyScore": 0.6,
+      "percentInMonitor": 0.756,
+      "percentOnTwitter": 0.354
+    },
+    {
+      "id": 471,
+      "name": "Nature",
+      "relevancyScore": 0.6,
+      "percentInMonitor": 2.024,
+      "percentOnTwitter": 1.542
+    },
+    {
+      "id": 337,
+      "name": "Healing",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.784,
+      "percentOnTwitter": 0.511
+    },
+    {
+      "id": 423,
+      "name": "Activism",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 1.39,
+      "percentOnTwitter": 1.094
+    },
+    {
+      "id": 1454,
+      "name": "Middle East",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.802,
+      "percentOnTwitter": 0.531
+    },
+    {
+      "id": 626,
+      "name": "Law",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 1.252,
+      "percentOnTwitter": 0.997
+    },
+    {
+      "id": 343,
+      "name": "Metal",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.796,
+      "percentOnTwitter": 0.561
+    },
+    {
+      "id": 1108,
+      "name": "Physics",
+      "relevancyScore": 0.3,
+      "percentInMonitor": 0.79,
+      "percentOnTwitter": 0.56
+    },
+    {
+      "id": 548,
+      "name": "Fiction",
+      "relevancyScore": 0.2,
+      "percentInMonitor": 0.83,
+      "percentOnTwitter": 0.682
+    },
+    {
+      "id": 3838,
+      "name": "Literature",
+      "relevancyScore": 0.1,
+      "percentInMonitor": 1.621,
+      "percentOnTwitter": 1.506
+    },
+    {
+      "id": 782,
+      "name": "R&B",
+      "relevancyScore": 0,
+      "percentInMonitor": 1.505,
+      "percentOnTwitter": 1.46
+    },
+    {
+      "id": 625,
+      "name": "Economics",
+      "relevancyScore": 0,
+      "percentInMonitor": 0.894,
+      "percentOnTwitter": 0.884
+    },
+    {
+      "id": 1016,
+      "name": "Design",
+      "relevancyScore": -0.1,
+      "percentInMonitor": 1.736,
+      "percentOnTwitter": 1.825
+    },
+    {
+      "id": 1412,
+      "name": "Diseases",
+      "relevancyScore": -0.1,
+      "percentInMonitor": 0.756,
+      "percentOnTwitter": 0.92
+    },
+    {
+      "id": 447,
+      "name": "Venezuela",
+      "relevancyScore": -0.2,
+      "percentInMonitor": 0.975,
+      "percentOnTwitter": 1.224
+    },
+    {
+      "id": 176,
+      "name": "SoundCloud",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 0.992,
+      "percentOnTwitter": 1.29
+    },
+    {
+      "id": 1147,
+      "name": "Canada",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 1.067,
+      "percentOnTwitter": 1.399
+    },
+    {
+      "id": 1406,
+      "name": "Apple",
+      "relevancyScore": -0.3,
+      "percentInMonitor": 2.047,
+      "percentOnTwitter": 2.367
+    },
+    {
+      "id": 835,
+      "name": "London",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 1.569,
+      "percentOnTwitter": 1.982
+    },
+    {
+      "id": 270,
+      "name": "Fitness",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 3.639,
+      "percentOnTwitter": 4.041
+    },
+    {
+      "id": 157,
+      "name": "Philosophy",
+      "relevancyScore": -0.4,
+      "percentInMonitor": 0.767,
+      "percentOnTwitter": 1.265
+    },
+    {
+      "id": 373,
+      "name": "Health Care",
+      "relevancyScore": -0.5,
+      "percentInMonitor": 2.318,
+      "percentOnTwitter": 2.884
+    },
+    {
+      "id": 3274,
+      "name": "Finance",
+      "relevancyScore": -0.6,
+      "percentInMonitor": 1.961,
+      "percentOnTwitter": 2.71
+    },
+    {
+      "id": 572,
+      "name": "Egypt",
+      "relevancyScore": -0.7,
+      "percentInMonitor": 0.779,
+      "percentOnTwitter": 1.797
+    },
+    {
+      "id": 955,
+      "name": "Madrid",
+      "relevancyScore": -0.8,
+      "percentInMonitor": 0.767,
+      "percentOnTwitter": 2.233
+    },
+    {
+      "id": 596,
+      "name": "Actors",
+      "relevancyScore": -1,
+      "percentInMonitor": 1.009,
+      "percentOnTwitter": 2.814
+    },
+    {
+      "id": 531,
+      "name": "NFL",
+      "relevancyScore": -1.1,
+      "percentInMonitor": 1.177,
+      "percentOnTwitter": 2.949
+    },
+    {
+      "id": 492,
+      "name": "Barcelona",
+      "relevancyScore": -1.2,
+      "percentInMonitor": 0.905,
+      "percentOnTwitter": 3.247
+    },
+    {
+      "id": 33,
+      "name": "Spain",
+      "relevancyScore": -1.2,
+      "percentInMonitor": 1.309,
+      "percentOnTwitter": 3.255
+    },
+    {
+      "id": 534,
+      "name": "World News",
+      "relevancyScore": -1.3,
+      "percentInMonitor": 2.255,
+      "percentOnTwitter": 3.942
+    },
+    {
+      "id": 3859,
+      "name": "Beauty",
+      "relevancyScore": -1.4,
+      "percentInMonitor": 1.136,
+      "percentOnTwitter": 3.853
+    },
+    {
+      "id": 650,
+      "name": "Cars",
+      "relevancyScore": -1.4,
+      "percentInMonitor": 1.027,
+      "percentOnTwitter": 4.16
+    },
+    {
+      "id": 472,
+      "name": "Baseball",
+      "relevancyScore": -1.6,
+      "percentInMonitor": 0.796,
+      "percentOnTwitter": 5.861
+    },
+    {
+      "id": 657,
+      "name": "News and Media",
+      "relevancyScore": -2,
+      "percentInMonitor": 3.235,
+      "percentOnTwitter": 5.968
+    },
+    {
+      "id": 320,
+      "name": "Hip Hop",
+      "relevancyScore": -2.3,
+      "percentInMonitor": 1.309,
+      "percentOnTwitter": 7.599
+    },
+    {
+      "id": 361,
+      "name": "Games",
+      "relevancyScore": -2.3,
+      "percentInMonitor": 1.113,
+      "percentOnTwitter": 8.822
+    },
+    {
+      "id": 494,
+      "name": "Video Games",
+      "relevancyScore": -3.2,
+      "percentInMonitor": 2.566,
+      "percentOnTwitter": 9.07
+    },
+    {
+      "id": 253,
+      "name": "Fashion",
+      "relevancyScore": -3.7,
+      "percentInMonitor": 2.388,
+      "percentOnTwitter": 11.03
+    },
+    {
+      "id": 172,
+      "name": "Science and Technology",
+      "relevancyScore": -3.8,
+      "percentInMonitor": 9.02,
+      "percentOnTwitter": 13.721
+    },
+    {
+      "id": 1087,
+      "name": "Basketball",
+      "relevancyScore": -4.5,
+      "percentInMonitor": 2.267,
+      "percentOnTwitter": 16.791
+    },
+    {
+      "id": 1142,
+      "name": "Soccer",
+      "relevancyScore": -8.8,
+      "percentInMonitor": 4.608,
+      "percentOnTwitter": 31.166
+    }
+  ];
+  
+  var basicVerticalBarData = {"vulnerability":[{"name":"HIGH","number":1},{"name":"MEDIUM","number":1},{"name":"LOW","number":0},{"name":"OK","number":31},{"name":"UNKNOWN","number":0}],"license":[{"name":"HIGH","number":0},{"name":"MEDIUM","number":0},{"name":"LOW","number":0},{"name":"OK","number":33},{"name":"UNKNOWN","number":0}],"activity":[{"name":"HIGH","number":1},{"name":"MEDIUM","number":0},{"name":"LOW","number":1},{"name":"OK","number":31},{"name":"UNKNOWN","number":0}],"version":[{"name":"HIGH","number":4},{"name":"MEDIUM","number":13},{"name":"LOW","number":11},{"name":"OK","number":5},{"name":"UNKNOWN","number":0}]};
+  
+  
+  var blockData = [{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "low"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "low"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "low"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "unknown"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "unknown"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "high"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "medium"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"},{"key": "v1.1.2", "value": "low"},{"key": "v1.3.6", "value": "high"},{"key": "v1.3.9", "value": "medium"},{"key": "v1.5.2", "value": "unknown"},{"key": "v1.6.7", "value": "medium"},{"key": "v2.1.4", "value": "low"},{"key": "v2.3.7", "value": "low"},{"key": "v3.7.8", "value": "medium"},{"key": "v4.1.2", "value": "unknown"},{"key": "v4.1.8", "value": "high"}];
 	var tickMod = 1;
+  
 	
 	
 	// ****************
@@ -5559,10 +6986,54 @@ $( document ).ready(function() {
 		// Clear all charts to reinitialize them
 		$('.viz-content').html('');
 		try {
-		makeBasicLine('#line-chart-1', basicLineData);
-		makeExtraLine('#line-chart-2', extraLineData);
-		makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Hour", tickMod, 'average posts at');
+      makeBasicLine('#line-chart-1', basicLineData);
+      makeExtraLine('#line-chart-2', extraLineData);
+      makeLollipopChart('#lollipop-chart-1', lollipopData, "Average Posts per Hour", tickMod, 'average posts at');
+      makeCircleLineCompare('#circle-line-compare-chart-1', circleLineData, [0, 1, 2, 3, 4, 5], 200);
+      makeCompareTwoChart('#circle-compare-chart-1', compare2Data);
+      makeVerticalBarChart("#vertical-bar-1", verticalBarData);
+      
+      // Example Reusable Charts
+      var basicVerticalChart = d3.select("#vertical-bar-2 .viz-content")
+        .append("svg").attr('display', 'inline-block')
+        .chart("BarPercent", {
+            id: "securityRiskChart",
+            width: $('#vertical-bar-2 .viz-content').innerWidth() - 20,
+            height: 150,
+            margin: {
+                'top': 10,
+                'right': 10,
+                'left': 150,
+                'bottom': 20
+            },
+            color: "#db524b",
+            numCategories: 5,
+            categorySwap: {
+                "OK" : "Nothing"
+            }
+        });
+      
+      var blockChart = d3.select("#blockchart .viz-content")
+        .append("svg")
+        .chart("BlockChart", {
+          "height" : 225,
+          "width" : $('#blockchart .viz-content').innerWidth() - 20,
+          "columns" : 10,
+          "pointSize" : 15,
+          "margin" : {"top" : 15, "right" : 15, "left" : 15, "bottom" : 15},
+          "possibleValues" : ["unknown", "low", "medium", "high"]
+        });
+      blockChart.draw(blockData);
+      blockChart.showPercentages();
+
+      $(chart).on('chartElementClicked', function(e, eventData) {
+        console.log(eventData);
+      });
+
+    basicVerticalChart.draw(basicVerticalBarData['vulnerability']);
+      
 		} catch(err) {
+      console.log(err);
 			console.log('Probably on a page that has no charts');
 		}
 		// Now do something with these new values

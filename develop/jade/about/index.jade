@@ -1,266 +1,274 @@
 extends ../_layout.jade
-block head-additon
-	link(rel="stylesheet", type="text/css", href="/assets/css/about.css")
 block hero-id
-	- var heroID = "index-hero"
+  - var heroID = "index-hero"
 block header-text
-	| Helpful Code Hints
+  | Helpful Code Hints
+block additional-nav
+  include partials/_nav.jade
+  
 block content
-	h1#helpful-code-stuffs About this website / repo
-	p [ adam m pere ][ august 2015 ]
-	p
-		| This repository is a starter prototype, it contains an example of html templating, a full sass template, and  handfull of helpful codes stuffs (snippets and explanations... including d3 charts) to make starting a project easier.
-	h2#dependencies Dependencies
-	ol
-		li
-			| I prefer to use 
-			a(href='https://incident57.com/codekit/') codekit
-			|  to compile 
-			code Sass
-			|  and 
-			code Jade
-			|  files. If you prefer a commandline approach, I recommend 
-			a(href='http://gulpjs.com/') gulp
-			| .
-		li
-			a(href='http://compass-style.org/') Compass
-			|  &#8212;  This configures the Sass directories and adds many useful functions
-		li
-			| Sass &#8212; This compiles into our 
-			code css
-			|  file
-		li
-			| Jade &#8212; This is a templating engine that compiles into our actual 
-			code html
-			|  files.
-		li
-			| d3.js &#8212; This is a javascript library that is used to make interactive graphics and charts
-		li Jquery &#8212; Hopefully I don’t need to introduce this.
-	h2#structure Structure
-	p
-		| This directory is extremely organized… for some, it may be a bit too organized but I believe that breaking everything up this way will make it easier for the client to understand our code (not to mention make it that much quicker to understand our own code.
-	h3#configfiles Config Files
-	ol
-		li
-			code config.rb
-			|  - This file is used to configure compass and define the directories where the 
-			code Sass
-			|  files will be compiled from and to.
-		li
-			code config.codekit
-			|  - This is a configuration file for codekit that is set up to compile javascript, Jade, and Sass files and vendor prefixes to styles automatically.
-	h3#assets Assets
-	p /Assets is where all your css and js will compile to. It is also where you should store images and icons.
-	ol
-		li
-			code css/
-			|  - This directory is where all of the css will be compiled to. You should never have to do anything to this directory.
-		li
-			code imgs/
-			|  - This is the directory where all images should be held.
-		li
-			code imgs/icons/
-			|  - This is the directory where all icons should be contained.
-		li
-			code imgs/icons/icons.svg
-			|  - This is an svg spritesheet (pulled from the Partners Healthcare Insight project). We use a spritesheet instead of pasting the svg code over and over again because it’s quicker to type AND it is much less resource intensive on the user because the browser can cache the spritesheet and refrence individual elements instead of having to load each svg everytime.
-			p example icon:
-			pre
-				code.svg
-					| &lt;symbol id=&quot;icon-activities&quot; width = &quot;13px&quot; height = &quot;13px&quot; viewBox=&quot;0 0 13 13&quot;&gt;
-					| &#9;&lt;path d=&quot;M5.826,9.926 C5.826,9.926 5.826,8.938 5.826,8.938 C5.826,8.938 12.814,8.938 12.814,8.938 C12.814,8.938 12.814,9.926 12.814,9.926 C12.814,9.926 5.826,9.926 5.826,9.926 ZM7.841,5.939 C7.841,5.939 12.814,5.939 12.814,5.939 C12.814,5.939 12.814,6.927 12.814,6.927 C12.814,6.927 7.841,6.927 7.841,6.927 C7.841,6.927 7.841,5.939 7.841,5.939 ZM5.840,3.003 C5.840,3.003 12.814,3.003 12.814,3.003 C12.814,3.003 12.814,3.960 12.814,3.960 C12.814,3.960 5.840,3.960 5.840,3.960 C5.840,3.960 5.840,3.003 5.840,3.003 ZM5.840,0.003 C5.840,0.003 12.814,0.003 12.814,0.003 C12.814,0.003 12.814,0.960 12.814,0.960 C12.814,0.960 5.840,0.960 5.840,0.960 C5.840,0.960 5.840,0.003 5.840,0.003 ZM6.954,6.385 C5.008,8.176 3.413,10.696 2.910,11.986 C2.910,11.986 -0.015,8.886 -0.015,8.886 C-0.015,8.886 0.732,8.377 0.732,8.377 C0.732,8.377 2.425,9.672 2.425,9.672 C3.116,8.849 4.655,6.615 6.775,5.315 C6.775,5.315 6.954,6.385 6.954,6.385 ZM1.802,3.003 C1.802,3.003 3.676,3.003 3.676,3.003 C3.676,3.003 3.676,3.960 3.676,3.960 C3.676,3.960 1.802,3.960 1.802,3.960 C1.802,3.960 1.802,3.003 1.802,3.003 ZM1.802,0.003 C1.802,0.003 3.676,0.003 3.676,0.003 C3.676,0.003 3.676,0.960 3.676,0.960 C3.676,0.960 1.802,0.960 1.802,0.960 C1.802,0.960 1.802,0.003 1.802,0.003 Z&quot; id=&quot;path-1&quot; class=&quot;cls-2&quot; fill-rule=&quot;evenodd&quot;/&gt;
-					| &lt;/symbol&gt;
+  article#about
+    section#Info
+      h1#helpful-code-stuffs About this website / repo
+      p [ adam m pere ][ august 2015 ]
+      p
+        | This repository is a starter prototype, it contains an example of html templating using jade, a full sass template, and  handfull of helpful codes stuffs (snippets and explanations... including d3 charts) to make starting a project easier.
+    section#dependencies
+      h2 Dependencies
+      ol
+        li
+          | I prefer to use 
+          a(href='https://incident57.com/codekit/') codekit
+          |  to compile 
+          code Sass
+          |  and 
+          code Jade
+          |  files. If you prefer a commandline approach, I recommend 
+          a(href='http://gulpjs.com/') gulp
+          | .
+        li
+          a(href='http://compass-style.org/') Compass
+          |  &#8212;  Configures the Sass directories and adds many useful functions
+        li
+          | Sass &#8212; Compiles into our 
+          code css
+          |  files
+        li
+          | Jade &#8212; A templating engine that compiles into our actual 
+          code html
+          |  files.
+        li
+          | d3.js &#8212; A javascript library that is used to make interactive graphics and charts
+        li Jquery &#8212; Hopefully I don’t need to introduce this.
+    section#structure
+      h2 Structure
+      p
+        | This directory is extremely organized&hellip; for some, it may be a bit too organized but I believe that breaking everything up this way will make it easier for the client to understand our code (not to mention make it that much quicker to understand our own code.
+    section#config
+      h3#configfiles Config Files
+      ol
+        li
+          code config.rb
+          |  - This file is used to configure compass and define the directories where the 
+          code Sass
+          |  files will be compiled from and to.
+        li
+          code config.codekit
+          |  - This is a configuration file for codekit that is set up to compile javascript, Jade, and Sass files and vendor prefixes to styles automatically.
+    section#assets
+      h3#assets Assets
+      p /Assets is where all your css and js will compile to. It is also where you should store images and icons.
+      ol
+        li
+          code css/
+          |  - This directory is where all of the css will be compiled to. You should never have to do anything to this directory.
+        li
+          code imgs/
+          |  - This is the directory where all images should be held.
+        li
+          code imgs/icons/
+          |  - This is the directory where all icons should be contained.
+        li
+          code imgs/icons/icons.svg
+          |  - This is an svg spritesheet (pulled from the Partners Healthcare Insight project). We use a spritesheet instead of pasting the svg code over and over again because it’s quicker to type AND it is much less resource intensive on the user because the browser can cache the spritesheet and refrence individual elements instead of having to load each svg everytime.
+          p example icon:
+          pre
+            code.svg
+              | &lt;symbol id=&quot;icon-activities&quot; width = &quot;13px&quot; height = &quot;13px&quot; viewBox=&quot;0 0 13 13&quot;&gt;
+              | &#9;&lt;path d=&quot;M5.826,9.926 C5.826,9.926 5.826,8.938 5.826,8.938 C5.826,8.938 12.814,8.938 12.814,8.938 C12.814,8.938 12.814,9.926 12.814,9.926 C12.814,9.926 5.826,9.926 5.826,9.926 ZM7.841,5.939 C7.841,5.939 12.814,5.939 12.814,5.939 C12.814,5.939 12.814,6.927 12.814,6.927 C12.814,6.927 7.841,6.927 7.841,6.927 C7.841,6.927 7.841,5.939 7.841,5.939 ZM5.840,3.003 C5.840,3.003 12.814,3.003 12.814,3.003 C12.814,3.003 12.814,3.960 12.814,3.960 C12.814,3.960 5.840,3.960 5.840,3.960 C5.840,3.960 5.840,3.003 5.840,3.003 ZM5.840,0.003 C5.840,0.003 12.814,0.003 12.814,0.003 C12.814,0.003 12.814,0.960 12.814,0.960 C12.814,0.960 5.840,0.960 5.840,0.960 C5.840,0.960 5.840,0.003 5.840,0.003 ZM6.954,6.385 C5.008,8.176 3.413,10.696 2.910,11.986 C2.910,11.986 -0.015,8.886 -0.015,8.886 C-0.015,8.886 0.732,8.377 0.732,8.377 C0.732,8.377 2.425,9.672 2.425,9.672 C3.116,8.849 4.655,6.615 6.775,5.315 C6.775,5.315 6.954,6.385 6.954,6.385 ZM1.802,3.003 C1.802,3.003 3.676,3.003 3.676,3.003 C3.676,3.003 3.676,3.960 3.676,3.960 C3.676,3.960 1.802,3.960 1.802,3.960 C1.802,3.960 1.802,3.003 1.802,3.003 ZM1.802,0.003 C1.802,0.003 3.676,0.003 3.676,0.003 C3.676,0.003 3.676,0.960 3.676,0.960 C3.676,0.960 1.802,0.960 1.802,0.960 C1.802,0.960 1.802,0.003 1.802,0.003 Z&quot; id=&quot;path-1&quot; class=&quot;cls-2&quot; fill-rule=&quot;evenodd&quot;/&gt;
+              | &lt;/symbol&gt;
 
-			p
-				| Each icon should be wrapped in a 
-				code symbol
-				|  element with a unique id, a width, a height, and a viewbox (which usually determines the width and height).
-			p To use the icon, you would do something like
-			pre
-				code
-					| &lt;svg class=&quot;icon&quot;&gt;
-					| &#9;&lt;use xlink:href=&quot;&lt;%= basepath %&gt;/imgs/icons/icons.svg#icon-activities&quot; /&gt;
-					| &lt;/svg&gt;
-			p
-				| Where you simply append the id of your icon at the end of the 
-				code xlink:href
-				|  attr (which should be the url of your spritesheet). Make sure that there are no hard coded styles here. Any styles that are hard coded cannot be over written in css.
-		li
-			code js/
-			|  - This is where all of your javascript file swill compile to. They are simply minified and the '.min' is appended to the title.
-		
-	h2#assets Develop
-	ul
-		li
-			code develop/
-			| Is where you will be spending all of your time. These are the files that you should be changing (other than adding images). Thist directory contains all 
-		code Jade
-		| files,
-		code Sass
-		| files and
-		code Javascript
-		| files.
-	
-	h3#jade Jade
-	p
-		| An 
-		code _
-		|  at the beginning of a file name denotes a template or module that should not be rendered by itself. All 
-		code Jade
-		|  files are in the 
-		code develop/jade/
-		|  directory. This directory should not be included when uploading for distribution. It is only for development. Jade files compile into the root directory e.g. 
-		code jade/
-		|  &#8212;> 
-		code root
-		|  but 
-		code jade/about/
-		|  &#8212;> 
-		code root/about/
-	ol
-		li
-			code modules/
-			|  - This directory should include any content specific partials. Most of the time, these will extend a template.
-		li
-			code partials/
-			|  - This directory should include any chunks that can be included on more than one page. These are generally content agnostic (like a template) but are included in either a template or a page. (e.g. header, footer, navbar)
-		li
-			code templates/
-			|  - This directory includes any chunks that are aware of the type of content that they can contain but not the specific content. For example, you might have a chart template that you use to create chart modules.
-		li
-			code _layout.jade
-			|  - This is the master template for most pages (including the index). This is not in the 
-			code templates/
-			|  directory simply because it is a file that you may reference often and I want to stress its importance.
-		li
-			code index.jade
-			| , 
-			code about/
-			| , 
-			code d3/
-			| , 
-			code ...
-			|  - Every other directory/file in 
-			code jade/
-			|  should contain the file that actually compiles into html. Usually this will extend 
-			code _layout
-			|  and will most likely include partials or modules. These pages are content specific and this is where you define the content in each block (that exists in everything it extends or includes)
-	h3#sass Sass
-	p
-		| An 
-		code _
-		|  at the beginning of a file name denotes a partial. This will not compile into its own 
-		code .css
-		|  file. All 
-		code Sass
-		|  files are located in the 
-		code develop/sass/
-		|  directory. This directory should not be included when uploadng for distribution.
-	p YOU SHOULD BE WRITING YOUR STYLES FOR MOBILE FIRST, DESKTOP SECOND.
-	ol
-		li
-			code all/all.scss
-			|  - Only 
-			code .scss
-			|  files in the 
-			code all
-			|  directory will be compiled into a css file. For the most part, 
-			code all.css
-			|  is the only file that will be compiled. This file is simply a list of includes for everything at the first level of the 
-			code partials/
-			|  directory. If you add a file to the first level of 
-			code partials/
-			|  then you must include it in 
-			code all.scss
-			| .
-		li
-			code partials/
-			|  - This is the directory where you’ll be spending most of your time. It contains all the 
-			code .scss
-			|  partial files that compile into 
-			code all.scss
-			| .
-		li
-			code partials/charts/
-			|  - This directory contains all the individual 
-			code .scss
-			|  files for each chart type.
-		li
-			code partials/charts/_charts.scss
-			|  - This file contains no actual styles, it simply includes all files from 
-			code /partials/charts
-			| .
-		li
-			code partials/desktop/
-			|  - This directory contains all the 
-			code .scss
-			|  files for larger screen sizes. This directory should mimic 
-			code /partials
-			|  (omitting a few files / directories)
-		li
-			code partials//desktop/_desktop.scss
-			|  - This file includes everything in the 
-			code /partials/desktop
-			|  directory and wraps it in a media query. This allows you to break up the styles for desktop and mobile.
-		li
-			code partials/_fonts.scss
-			|  - This is where you define any fonts if you have the source files
-		li
-			code partials/forms/
-			|  - This directory contains all files associate with form elements.
-		li
-			code partials/forms/_forms.scss
-			|  - This file contains no acutal styles, it simply includes all files from 
-			code /partials/forms
-			| .
-		li
-			code partials/_icons.scss
-			|  - This file is where you should define all icon classes and do perform icon styling.
-		li
-			code partials/_media.scss
-			|  - This file is where you do all styling for any type of media: images, audio, video, etc.
-		li
-			code /partials/structure/
-			|  - This directory contains all files that directly relate to the layout of the page. This includes: the footer, header, lists, navigation menus, tables, and others.
-		li
-			code partials/structure/_structure.scss
-			|  - This file should have no actual styles. It simply includes all files in 
-			code /partials/structures
-			| .
-		li
-			code partials/_typography.scss
-			|  - This file contains all styles that directly relate to type and not structure. This includes font sizes, line heights, font colors, blockquotes, paragraphs, etc.
-		li
-			code partials/variables/
-			|  - This directory includes files that contain every 
-			code Sass
-			|  variable that will be used in this project. That also includes helper classes that you may want to extend over and over again (e.g. transitions).
-		li
-			code /artials/variables/_variables.scss
-			|  - This file does not contain any actual styles. It simply includes all files in 
-			code /partials/variables
-			| .
-	h3#javascript JavaScript
-	p
-		| javascript for development should be locating in
-		code develop/js/
-		| . All javascript files are compiled on save to 
-		code assets/js/
-		| with 
-		code .min
-		|   appended to the title.
-		|   appended to the title.
-	ol
-		li
-			code all.js
-			|  - This file is to be included on every page. This is where you put global functions such as window resizing, etc.
-		li
-			code charts/
-			|  - This directory is where the javascript files for individual charts are held. Each chart has one function that can be called to place the chart in a DOM element.
-		li
-			code sections/
-			|  - This directory is where you will put all screen specific javascript.
-		li
-			code vendor/
-			|  - This directory is where all javascript libraries (such as jquery or d3.js) are contained.
+          p
+            | Each icon should be wrapped in a 
+            code symbol
+            |  element with a unique id, a width, a height, and a viewbox (which usually determines the width and height).
+          p To use the icon, you would do something like
+          pre
+            code
+              | &lt;svg class=&quot;icon&quot;&gt;
+              | &#9;&lt;use xlink:href=&quot;&lt;%= basepath %&gt;/imgs/icons/icons.svg#icon-activities&quot; /&gt;
+              | &lt;/svg&gt;
+          p
+            | Where you simply append the id of your icon at the end of the 
+            code xlink:href
+            |  attr (which should be the url of your spritesheet). Make sure that there are no hard coded styles here. Any styles that are hard coded cannot be over written in css.
+        li
+          code js/
+          |  - This is where all of your javascript file swill compile to. They are simply minified and the '.min' is appended to the title.
+    section#develop
+      h2 Develop
+      ul
+        li
+          code develop/
+          |  Is where you will be spending all of your time. These are the files that you should be changing (other than adding images). Thist directory contains all 
+        code Jade
+        | files,
+        code Sass
+        | files and 
+        code Javascript
+        |  files.
+    section#jade
+      h3 Jade
+      p
+        | An 
+        code _
+        |  at the beginning of a file name denotes a template or module that should not be rendered by itself. All 
+        code Jade
+        |  files are in the 
+        code develop/jade/
+        |  directory. This directory should not be included when uploading for distribution. It is only for development. Jade files compile into the root directory e.g. 
+        code jade/
+        |  &#8212;> 
+        code root
+        |  but 
+        code jade/about/
+        |  &#8212;> 
+        code root/about/
+      ol
+        li
+          code modules/
+          |  - This directory should include any content specific partials. Most of the time, these will extend a template.
+        li
+          code partials/
+          |  - This directory should include any chunks that can be included on more than one page. These are generally content agnostic (like a template) but are included in either a template or a page. (e.g. header, footer, navbar)
+        li
+          code templates/
+          |  - This directory includes any chunks that are aware of the type of content that they can contain but not the specific content. For example, you might have a chart template that you use to create chart modules.
+        li
+          code _layout.jade
+          |  - This is the master template for most pages (including the index). This is not in the 
+          code templates/
+          |  directory simply because it is a file that you may reference often and I want to stress its importance.
+        li
+          code index.jade
+          | , 
+          code about/
+          | , 
+          code d3/
+          | , 
+          code ...
+          |  - Every other directory/file in 
+          code jade/
+          |  should contain the file that actually compiles into html. Usually this will extend 
+          code _layout
+          |  and will most likely include partials or modules. These pages are content specific and this is where you define the content in each block (that exists in everything it extends or includes)
+    section#sass
+      h3 Sass
+      p
+        | An 
+        code _
+        |  at the beginning of a file name denotes a partial. This will not compile into its own 
+        code .css
+        |  file. All 
+        code Sass
+        |  files are located in the 
+        code develop/sass/
+        |  directory. This directory should not be included when uploadng for distribution.
+      p YOU SHOULD BE WRITING YOUR STYLES FOR MOBILE FIRST, DESKTOP SECOND.
+      ol
+        li
+          code all/all.scss
+          |  - Only 
+          code .scss
+          |  files in the 
+          code all
+          |  directory will be compiled into a css file. For the most part, 
+          code all.css
+          |  is the only file that will be compiled. This file is simply a list of includes for everything at the first level of the 
+          code partials/
+          |  directory. If you add a file to the first level of 
+          code partials/
+          |  then you must include it in 
+          code all.scss
+          | .
+        li
+          code partials/
+          |  - This is the directory where you’ll be spending most of your time. It contains all the 
+          code .scss
+          |  partial files that compile into 
+          code all.scss
+          | .
+        li
+          code partials/charts/
+          |  - This directory contains all the individual 
+          code .scss
+          |  files for each chart type.
+        li
+          code partials/charts/_charts.scss
+          |  - This file contains no actual styles, it simply includes all files from 
+          code /partials/charts
+          | .
+        li
+          code partials/desktop/
+          |  - This directory contains all the 
+          code .scss
+          |  files for larger screen sizes. This directory should mimic 
+          code /partials
+          |  (omitting a few files / directories)
+        li
+          code partials//desktop/_desktop.scss
+          |  - This file includes everything in the 
+          code /partials/desktop
+          |  directory and wraps it in a media query. This allows you to break up the styles for desktop and mobile.
+        li
+          code partials/_fonts.scss
+          |  - This is where you define any fonts if you have the source files
+        li
+          code partials/forms/
+          |  - This directory contains all files associate with form elements.
+        li
+          code partials/forms/_forms.scss
+          |  - This file contains no acutal styles, it simply includes all files from 
+          code /partials/forms
+          | .
+        li
+          code partials/_icons.scss
+          |  - This file is where you should define all icon classes and do perform icon styling.
+        li
+          code partials/_media.scss
+          |  - This file is where you do all styling for any type of media: images, audio, video, etc.
+        li
+          code /partials/structure/
+          |  - This directory contains all files that directly relate to the layout of the page. This includes: the footer, header, lists, navigation menus, tables, and others.
+        li
+          code partials/structure/_structure.scss
+          |  - This file should have no actual styles. It simply includes all files in 
+          code /partials/structures
+          | .
+        li
+          code partials/_typography.scss
+          |  - This file contains all styles that directly relate to type and not structure. This includes font sizes, line heights, font colors, blockquotes, paragraphs, etc.
+        li
+          code partials/variables/
+          |  - This directory includes files that contain every 
+          code Sass
+          |  variable that will be used in this project. That also includes helper classes that you may want to extend over and over again (e.g. transitions).
+        li
+          code /artials/variables/_variables.scss
+          |  - This file does not contain any actual styles. It simply includes all files in 
+          code /partials/variables
+          | .
+    section#javascript
+      h3 JavaScript
+      p
+        | javascript for development should be locating in 
+        code develop/js/
+        | . All javascript files are compiled on save to 
+        code assets/js/
+        |  with 
+        code .min
+        |   appended to the title.
+      ol
+        li
+          code all.js
+          |  - This file is to be included on every page. This is where you put global functions such as window resizing, etc.
+        li
+          code charts/
+          |  - This directory is where the javascript files for individual charts are held. Each chart has one function that can be called to place the chart in a DOM element.
+        li
+          code sections/
+          |  - This directory is where you will put all screen specific javascript.
+        li
+          code vendor/
+          |  - This directory is where all javascript libraries (such as jquery or d3.js) are contained.
 

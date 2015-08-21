@@ -1,18 +1,37 @@
-nav {
-	width: 100vw;
-	text-align: center;
-	ul {
-		width: auto;
-		display: inline-block;
-		li {
-			@extend %transitions;
-			display: inline-block;
-			padding: .5em $base-padding;
-			background-color: transparent;		
-			&:hover, &:active, &.selected {
-				font-weight: $light;
-				background-color: $nav-hover-color;
-			}
-		}
-	}
+.nav-wrapper {
+  width: 100vw;
+  nav {
+    width: 100vw;
+    text-align: center;
+    ul {
+      width: auto;
+      display: inline-block;
+      li {
+        @extend %transitions;
+        display: inline-block;
+        padding: .5em $base-padding;
+        background-color: transparent;	
+        margin-bottom: 0; 
+        &:hover, &:active, &.selected {
+          font-weight: $light;
+          background-color: $nav-hover-color;
+        }
+
+        span {
+          margin-left: .5em; 
+        }
+
+        &.sub {
+          font-size: $medium-font-size; 
+          font-weight: $light;
+          padding-top: $base-padding * 2;
+          padding-left: 0;
+          display: none;
+          &:hover, &:active, &.selected {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }

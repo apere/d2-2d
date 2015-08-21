@@ -49,6 +49,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/charts\/block-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/block-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/block-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/assets\/js\/charts\/circle-line-compare-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/circle-line-compare-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/circle-line-compare-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/assets\/js\/charts\/compare-two-circle-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/compare-two-circle-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/compare-two-circle-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/assets\/js\/charts\/extra-line-chart.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -82,12 +115,45 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/assets\/js\/charts\/vertical-bar-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/vertical-bar-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/vertical-bar-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/assets\/js\/charts\/vertical-compare-bar-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/vertical-compare-bar-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/vertical-compare-bar-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/assets\/js\/index.min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/index.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/index.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/assets\/js\/vendor\/d3.chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/vendor\/d3.chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/d3.chart.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -155,13 +221,13 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/develop\/jade\/d3\/index.jade": {
+	"\/develop\/jade\/about\/partials\/_nav.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/develop\/jade\/d3\/index.jade",
-		"outputAbbreviatedPath": "\/d3\/index.html",
+		"inputAbbreviatedPath": "\/develop\/jade\/about\/partials\/_nav.jade",
+		"outputAbbreviatedPath": "\/about\/partials\/_nav.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -177,35 +243,90 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/develop\/jade\/modules\/homepage\/one.jade": {
+	"\/develop\/jade\/modules\/homepage\/_basic-line.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/one.jade",
-		"outputAbbreviatedPath": "\/modules\/homepage\/one.html",
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_basic-line.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_basic-line.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/develop\/jade\/modules\/homepage\/three.jade": {
+	"\/develop\/jade\/modules\/homepage\/_basic-vertical-bar.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/three.jade",
-		"outputAbbreviatedPath": "\/modules\/homepage\/three.html",
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_basic-vertical-bar.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_basic-vertical-bar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/develop\/jade\/modules\/homepage\/two.jade": {
+	"\/develop\/jade\/modules\/homepage\/_block.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/two.jade",
-		"outputAbbreviatedPath": "\/modules\/homepage\/two.html",
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_block.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_block.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_circle-compare-two.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_circle-compare-two.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_circle-compare-two.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_circle-line-compare.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_circle-line-compare.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_circle-line-compare.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_extra-line.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_extra-line.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_extra-line.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_lollipop.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_lollipop.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_lollipop.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_vertical-compare-bar.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_vertical-compare-bar.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_vertical-compare-bar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -228,6 +349,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/develop\/jade\/partials\/_header.jade",
 		"outputAbbreviatedPath": "\/partials\/_header.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/partials\/_index-nav.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/partials\/_index-nav.jade",
+		"outputAbbreviatedPath": "\/partials\/_index-nav.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -265,6 +397,39 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/develop\/js\/charts\/block-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/block-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/block-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/develop\/js\/charts\/circle-line-compare-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/circle-line-compare-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/circle-line-compare-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/develop\/js\/charts\/compare-two-circle-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/compare-two-circle-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/compare-two-circle-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/develop\/js\/charts\/extra-line-chart.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -298,12 +463,45 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/develop\/js\/charts\/vertical-bar-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/vertical-bar-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/vertical-bar-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/develop\/js\/charts\/vertical-compare-bar-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/vertical-compare-bar-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/vertical-compare-bar-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/develop\/js\/index.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/develop\/js\/index.js",
 		"outputAbbreviatedPath": "\/assets\/js\/index.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/develop\/js\/vendor\/d3.chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/vendor\/d3.chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/d3.chart.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -330,22 +528,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
-		},
-	"\/develop\/sass\/about.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/develop\/sass\/about.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/about.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
 		},
 	"\/develop\/sass\/all.scss": {
 		"createSourceMap": 0,
@@ -427,6 +609,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/develop\/sass\/partials\/charts\/_bar-chart.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/charts\/_bar-chart.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_bar-chart.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/develop\/sass\/partials\/charts\/_block-chart.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/charts\/_block-chart.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_block-chart.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/develop\/sass\/partials\/charts\/_charts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -436,6 +650,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/develop\/sass\/partials\/charts\/_charts.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_charts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/develop\/sass\/partials\/charts\/_circle-line-compare.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/charts\/_circle-line-compare.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_circle-line-compare.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1230,7 +1460,7 @@
 			"flagValue": -1
 			},
 		"bitwise": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"boss": {
@@ -1254,7 +1484,7 @@
 			"flagValue": -1
 			},
 		"curly": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"debug": {
@@ -1274,7 +1504,7 @@
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqnull": {
@@ -1302,7 +1532,7 @@
 			"flagValue": -1
 			},
 		"freeze": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"funcscope": {
@@ -1342,7 +1572,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -1682,7 +1912,7 @@
 			"flagValue": -1
 			},
 		"booleans": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"bracketize": {
@@ -1690,23 +1920,23 @@
 			"flagValue": -1
 			},
 		"cascade": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"compress": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"conditionals": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"dead_code": {
@@ -1718,7 +1948,7 @@
 			"flagValue": -1
 			},
 		"drop_debugger": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eval": {
@@ -1726,11 +1956,11 @@
 			"flagValue": -1
 			},
 		"evaluate": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_funs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_vars": {
@@ -1738,7 +1968,7 @@
 			"flagValue": -1
 			},
 		"if_return": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"indent-level": {
@@ -1754,7 +1984,7 @@
 			"flagValue": -1
 			},
 		"join_vars": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -1766,23 +1996,23 @@
 			"flagValue": -1
 			},
 		"loops": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"mangle": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"max-line-len": {
-			"active": 1,
+			"active": 0,
 			"flagValue": 32000
 			},
 		"negate_iife": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"properties": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"pure_getters": {
@@ -1802,7 +2032,7 @@
 			"flagValue": -1
 			},
 		"sequences": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"sort": {
@@ -1810,7 +2040,7 @@
 			"flagValue": -1
 			},
 		"space-colon": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
@@ -1830,7 +2060,7 @@
 			"flagValue": -1
 			},
 		"width": {
-			"active": 1,
+			"active": 0,
 			"flagValue": 80
 			}
 		},

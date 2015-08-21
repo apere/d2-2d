@@ -1,5 +1,9 @@
 // This is where you would put any styles for lists
 
+li {
+  margin-bottom: .65em;
+}
+
 ul {
 	li {
 		
@@ -7,9 +11,14 @@ ul {
 }
 
 ol {
+  list-style: decimal;
 	li {
 		
 	}
+}
+
+ol, ul {
+  
 }
 
 

@@ -20,11 +20,12 @@ code {
   background-color: rgba(128, 128, 128, 0.28); }
 
 pre {
-  white-space: pre-wrap;
   background-color: rgba(128, 128, 128, 0.28);
   padding: 2em 3em;
   width: 80%;
-  margin: 2em auto; }
+  margin: 2em auto;
+  overflow-x: scroll; }
   pre code {
+    width: auto;
     display: block;
     background-color: transparent; }

@@ -1,0 +1,39 @@
+.circle-line-compare-chart {
+  
+  text {
+    font-size: $small-font-size;
+  }
+  
+  .datum text {
+    fill: $chart-point-color; 
+  }
+  
+  
+  
+  .legend {
+    .monitor-point {
+      background-color: $chart-text-color;
+    }
+    .twitter-point {
+      background-color: $chart-text-color;
+    }
+  }
+  
+  .axes {
+    text {
+      fill: $chart-text-color;
+    }
+  }
+  .label {
+    fill: #CACACA;
+  }
+  line {
+    stroke: $chart-text-color;
+  }
+  .monitor-point {
+    fill: $chart-point-color;
+  }
+  .twitter-point, .second-point {
+    fill: lighten($chart-point-color, 30%);
+  }
+}
