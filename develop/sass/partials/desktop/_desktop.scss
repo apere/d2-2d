@@ -1,0 +1,9 @@
+// This file is where you import all styles that should only be
+// used when on a larger screen
+@media only screen and (min-width: 800px) {
+	@import "structure/_structure";
+	@import "_typography";
+	@import "forms/_forms";
+	@import "_icons";
+}
+
