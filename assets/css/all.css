@@ -459,7 +459,7 @@ footer {
 @media only screen and (min-width: 800px) {
   main.main-container {
     display: inline-block;
-    width: calc(100vw - 135px - 5em); }
+    width: calc(100vw - 135px - 9px - 5em); }
 
   .nav-wrapper {
     width: 135px;

@@ -17,6 +17,6 @@ figure {
 main {
 	&.main-container {
 		display: inline-block;
-		width: calc(100vw - #{$nav-width} - 5em);
+		width: calc(100vw - #{$nav-width} - 9px - 5em);
 	}
 }
