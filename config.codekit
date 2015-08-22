@@ -60,6 +60,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/assets\/js\/charts\/bubble-timeline-chart.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/charts\/bubble-timeline-chart.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/bubble-timeline-chart.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/assets\/js\/charts\/circle-line-compare-chart.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -181,6 +192,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/assets\/js\/vendor\/moment.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/vendor\/moment.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/moment.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/config.rb": {
 		"fileType": 131072,
 		"ignore": 0,
@@ -263,6 +285,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_block.jade",
 		"outputAbbreviatedPath": "\/modules\/homepage\/_block.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/develop\/jade\/modules\/homepage\/_bubble-timeline.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/jade\/modules\/homepage\/_bubble-timeline.jade",
+		"outputAbbreviatedPath": "\/modules\/homepage\/_bubble-timeline.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -399,6 +432,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/develop\/js\/charts\/bubble-timeline-chart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/charts\/bubble-timeline-chart.js",
+		"outputAbbreviatedPath": "\/assets\/js\/charts\/bubble-timeline-chart.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/develop\/js\/charts\/circle-line-compare-chart.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -520,6 +564,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/develop\/js\/vendor\/moment.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/js\/vendor\/moment.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/moment.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/develop\/sass\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -632,6 +687,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/develop\/sass\/partials\/charts\/_bubble-timeline.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/charts\/_bubble-timeline.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_bubble-timeline.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/develop\/sass\/partials\/charts\/_charts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -737,6 +808,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/develop\/sass\/partials\/desktop\/_typography.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/develop\/sass\/partials\/desktop\/charts\/_bubble-timeline.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/desktop\/charts\/_bubble-timeline.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_bubble-timeline.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/develop\/sass\/partials\/desktop\/charts\/_charts.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/develop\/sass\/partials\/desktop\/charts\/_charts.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_charts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

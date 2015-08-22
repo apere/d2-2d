@@ -8,6 +8,7 @@
     <script src="/assets/js/vendor/jquery.min.js"></script>
     <script src="/assets/js/vendor/d3.min.min.js"></script>
     <script src="/assets/js/vendor/d3.chart.min.js"></script>
+    <script src="/assets/js/vendor/moment.min.js"></script>
     <script src="/assets/js/charts/line-chart.min.js"></script>
     <script src="/assets/js/charts/extra-line-chart.min.js"></script>
     <script src="/assets/js/charts/lollipop-chart.min.js"></script>
@@ -16,6 +17,7 @@
     <script src="/assets/js/charts/vertical-compare-bar-chart.min.js"></script>
     <script src="/assets/js/charts/vertical-bar-chart.min.js"></script>
     <script src="/assets/js/charts/block-chart.min.js"></script>
+    <script src="/assets/js/charts/bubble-timeline-chart.min.js"></script>
     <script src="/assets/js/index.min.js"></script>
     <!-- Target this block to append any page specific javascripts-->
     <title>Helpful Code Hints</title>
@@ -129,6 +131,32 @@
             </h1>
           </div>
           <div id="block-chart-1" class="module sketch block-chart">
+            <figure class="viz-content"></figure>
+          </div>
+        </section>
+        <hr><br>
+        <section id="bubbletimeline" class="module">
+          <div class="module-info">
+            <h1 class="title">Bubble Timeline Chart
+            </h1>
+          </div>
+          <div id="bubble-timeline-chart-1" class="module sketch bubble-timeline-chart">
+            <div class="time-buttons btn-group btn-group-sm">
+              <input id="six-months" type="radio" name="time-buttons" class="btn btn-default">
+              <label for="six-months">Last 6 Months</label>
+              <input id="one-year" type="radio" name="time-buttons" class="btn btn-default">
+              <label for="one-year">1 year</label>
+              <input id="two-years" type="radio" name="time-buttons" class="btn btn-default">
+              <label for="two-years">2 Years</label>
+              <input id="reset-years" type="radio" name="time-buttons" checked class="btn btn-default active">
+              <label for="reset-years">All Releases</label>
+            </div>
+            <div class="risk-buttons btn-group btn-group-sm">
+              <input id="security-butt" type="radio" name="risk-buttons" checked class="btn btn-default active">
+              <label for="security-butt">Security</label>
+              <input id="operational-butt" type="radio" name="risk-buttons" class="btn btn-default">
+              <label for="operational-butt">Operational</label>
+            </div>
             <figure class="viz-content"></figure>
           </div>
         </section>

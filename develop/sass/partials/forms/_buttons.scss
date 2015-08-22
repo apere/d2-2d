@@ -6,14 +6,30 @@ button, input[type='submit'], input[type='button'] {
 }
 
 input[type='radio'] {
+  display: none;
 	
-	&:hover, &:active {
-		
-	}
+  + label {
+    padding: $base-padding/5 $base-padding;
+    background-color: $header-background-color;
+    color: $chart-text-color;
+    cursor: pointer;
+    border-radius: 2px;
+    white-space: nowrap;
+    @extend %transitions;
+    
+    &:hover, &:active {
+      background-color: darken($header-background-color, 30%);
+      color: $inverse-text-color;
+    }
+  }
+  
+  
 	&:checked + label {
-		
+		background-color: darken($header-background-color, 60%);
+    color: $inverse-text-color;
 	}
 }
+
 
 input[type='checkbox'] {
 	

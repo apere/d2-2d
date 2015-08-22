@@ -1,0 +1,50 @@
+.bubble-timeline-chart {
+  svg {
+    margin-bottom: 0;
+  }
+  ul.legend {
+    width: 100%;
+    display: table;
+    margin-top: $base-padding;
+    li {
+      display: table-cell;
+      border-right: 1px solid rgba($chart-text-color, .7);
+      border-bottom: 0;
+      padding: 0 $base-padding;
+      text-align: center;
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:last-of-type {
+        border-right: 0;
+      }
+      &:hover {
+        .legend-count {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .time-buttons,
+  .risk-buttons {
+    width: auto;
+    label {
+      width: auto;
+      display: inline-block;
+    }
+  }
+  .time-buttons {
+    display: inline-block;
+  }
+  .risk-buttons {
+    margin: 0;
+    float: right;
+    vertical-align: top;
+    clear: right;
+    @media only screen and (max-width: 1000px) {
+      float: none; 
+      margin-top: $base-padding/2;
+    }
+    
+  }
+}

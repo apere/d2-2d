@@ -47,12 +47,9 @@
 
 .tooltip {
   width: auto;
-  padding: 5px 10px;
-  background-color:#ffffff;
-  color: #404040;
-  border:1px solid #404040;
-  font-family:sans-serif;
-  font-weight:100;
-  font-size:14px;
-  line-height:normal;
+  padding: $base-padding;
+  background-color: rgba(255, 255, 255, 0.84);
+  color: $chart-text-color;
+  border:1px solid rgba($chart-text-color, 0.49);
+  font-weight: $light;
 }

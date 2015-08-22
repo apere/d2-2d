@@ -1,6 +1,7 @@
 extends _layout.jade
 block specific-javascripts
   script(src="/assets/js/vendor/d3.chart.min.js")
+  script(src="/assets/js/vendor/moment.min.js")
   script(src="/assets/js/charts/line-chart.min.js")
   script(src="/assets/js/charts/extra-line-chart.min.js")
   script(src="/assets/js/charts/lollipop-chart.min.js")
@@ -9,6 +10,7 @@ block specific-javascripts
   script(src="/assets/js/charts/vertical-compare-bar-chart.min.js")
   script(src="/assets/js/charts/vertical-bar-chart.min.js")
   script(src="/assets/js/charts/block-chart.min.js")
+  script(src="/assets/js/charts/bubble-timeline-chart.min.js")
   script(src="/assets/js/index.min.js")
 block hero-id
   - var heroID = "index-hero"
@@ -39,3 +41,6 @@ block content
   hr
   br
   include modules/homepage/_block.jade
+  hr
+  br
+  include modules/homepage/_bubble-timeline.jade

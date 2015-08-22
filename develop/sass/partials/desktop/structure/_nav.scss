@@ -1,11 +1,9 @@
 .nav-wrapper {
   width: $nav-width;
   display: inline-block;
+  vertical-align: top;
   
   nav {
-    position: fixed;
-    top: $header-height;
-    left: 0;
     width: $nav-width;
     vertical-align: top;
     margin-top: $base-padding;

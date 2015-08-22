@@ -1,0 +1,91 @@
+.bubble-timeline-chart {
+  svg {
+    margin-top: $base-padding;
+    margin-bottom: $base-padding;
+  }
+  .point {
+    stroke-width: 0px;
+    stroke-opacity: .8;
+    fill: $chart-point-color;
+    stroke: $chart-point-color;
+    @extend %transitions;
+    cursor: pointer;
+  }
+  
+  .axis {
+    path {
+      stroke-width: 1px;
+      stroke: $chart-text-color;
+      fill: none;
+    }
+  }
+  
+  ul.legend {
+    width: 100%;
+    display: block;
+    margin-top: $base-padding;
+    li {
+      border-bottom: 1px solid rgba($chart-text-color, .7);
+      padding-left: 0;
+      display: block;
+    }
+  }
+  .legend-item.current-category {
+    font-weight: $bold;
+    cursor: pointer;
+  }
+  .time-axes {
+    font-size: $medium-font-size;
+    fill: $chart-text-color;
+  }
+  .current-active-point,
+  .current-category {
+    stroke-width: 3px;
+  }
+  .time-buttons,
+  .risk-buttons {
+    width: 60%;
+    margin: 0 auto;
+    label {
+      text-align: center;
+      display: block;
+    }
+  }
+  .risk-buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Class to style the tooltip */
+
+.tooltip-block {
+  width: auto;
+  padding: $base-padding/2 $base-padding;
+  background-color: rgba(#fff, .8);
+  border: 1px solid rgba($chart-text-color, .2);
+  color: $chart-text-color;
+  font-weight: $light;
+  .popover-title {
+    padding-top: $base-padding/4;
+    font-weight: $bold;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .popover-content {
+    span {
+      font-weight: $bold;
+    }
+  }
+  .label {
+    font-weight: $light;
+  }
+  .tooltip-date {
+    width: 100%;
+    font-weight: $bold;
+    font-size: $medium-font-size;
+    margin-top: $base-padding;
+  }
+}

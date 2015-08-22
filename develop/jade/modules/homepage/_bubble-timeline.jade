@@ -1,0 +1,25 @@
+extends ../../templates/_chart.jade
+block module-id
+  - var moduleID = "bubbletimeline";
+block module-title 
+  = "Bubble Timeline Chart"
+block chart-extra 
+  .time-buttons.btn-group.btn-group-sm
+    input#six-months.btn.btn-default(type='radio' name="time-buttons") 
+    label(for="six-months") Last 6 Months
+    input#one-year.btn.btn-default(type='radio' name="time-buttons")
+    label(for="one-year") 1 year
+    input#two-years.btn.btn-default(type='radio' name="time-buttons") 
+    label(for="two-years") 2 Years
+    input#reset-years.btn.btn-default.active(type='radio' name="time-buttons" checked=true)
+    label(for="reset-years") All Releases
+  .risk-buttons.btn-group.btn-group-sm
+    input#security-butt.btn.btn-default.active(type='radio' name="risk-buttons" checked=true) 
+    label(for="security-butt") Security
+    input#operational-butt.btn.btn-default(type='radio' name="risk-buttons") 
+    label(for="operational-butt") Operational
+
+
+block chart-attrs
+  - chartClass = "bubble-timeline-chart"
+  - chartID = "bubble-timeline-chart-1"

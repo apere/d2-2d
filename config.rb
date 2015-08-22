@@ -14,7 +14,7 @@ output_style = :nested
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
-line_comments = false
-color_output = false
+line_comments = true
+color_output = true
 
 preferred_syntax = :scss
