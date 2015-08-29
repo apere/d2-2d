@@ -114,15 +114,15 @@ input[type='radio'] {
   stroke-opacity: 0.8;
   stroke: #4a4a4a; }
   .basic-lollipop-chart line.active {
-    stroke: rgba(193, 1, 1, 0.74); }
+    stroke: #fa8585; }
 .basic-lollipop-chart circle {
   stroke-width: 0;
   stroke-opacity: .65;
   fill-opacity: .7;
   fill: #4a4a4a; }
   .basic-lollipop-chart circle.active {
-    fill: rgba(193, 1, 1, 0.74);
-    stroke: rgba(193, 1, 1, 0.74); }
+    fill: #fa8585;
+    stroke: #fa8585; }
 .basic-lollipop-chart .hours-title .day-date {
   fill-opacity: 0.8;
   font-size: 1.2em; }
